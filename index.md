@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+# Summary
 
-You can use the [editor on GitHub](https://github.com/zfireear/zfireear.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+* [Introduction](README.md)
+* [Markdown Math Syntax](markdown_math_syntax.md)
+* [Gradient Descent](gradient_descent/gradient_descent.md)
+    * [More about Gradient Descent](gradient_descent/more_about_gradient_descent.md)
+    * [New Optimazation](gradient_descent/new_optimization.md)
+* [Classification](classification/classification.md)
+* [Logistic Regression](logistic_regression/logistic_regression.md)
+    * [LRCode](logistic_regression/lrcode.md)
+* [Deep Learing](deep_learning/deep_learning.md)
+    * [Tips for Deep Learning](deep_learning/tips_for_deep_learning.md)
+* [Pytorch](pytorch/pytorch.md)
+    * [three kinds of data](pytorch/three_kinds_of_data.md)
+    * [real world data representation](pytorch/real_data_representaion.md)
+    * [The mechanics of learning](pytorch/walking_through_a_learning_algorithm_from_scratch.md)
+    * [Backpropagate all things](pytorch/autograd.md)
+    * [Training, validation, and overfitting](pytorch/training_validation_overfitting.md)
+    * [Neural Network](pytorch/neural_network.md)
+    * [NN Module](pytorch/nn_module.md)
+    * [Subclassing NN Module](pytorch/subclassing_nn_module.md)
+    * [Pre-trained Network](pytorch/pre-trained_network.md)
+    * [Image Classification](pytorch/image_classification.md)
+    * [Problem Set of PyTorch](pytorch/problem_set_of_pytorch.md)
+* [Convolutional Neural network](convolutional_neural_network/cnn.md)
+    * [CNN Network Structure](convolutional_neural_network/cnn_network_structure.md)
+    * [Common CNN](convolutional_neural_network/common_cnn.md)
+    * [CNN Aplication](convolutional_neural_network/cnn_aplication.md)
+* [Graph Neural Network](graph_neural_network/graph_neural_network.md)
+    * [Introduce to Graph Neural Network](graph_neural_network/introduce_to_graph_neural_network.md)
+    * [Spatial-based GNN](graph_neural_network/Spatial_based_gnn.md)
+    * [Spectral_based_gnn](graph_neural_network/Spectral_based_gnn.md)
+* [Recurrent Neural Network](recurrent_neural_network/recurrent_neural_network.md)
+    * [Recursive Structure](recurrent_neural_network/recursive_structure.md)
+* [Semi-supervised](semi_supervised/semi_supervised.md)
+* [Word Embedding](word_embedding/word_embedding.md)
+* [Explainable Machine Learning](explainable_machine_learning/explainable_machine_learning.md)
+* [Attack ML Models](attack_ml_models/attack_ml_models.md)
+    * [Attack image and audio](attack_ml_models/attack_image_and_audio.md)
+* [Network Compression](network_compression/network_compression.md)
+    * [Knowledge Distillation](network_compression/knowledge_distillation.md)
+    * [Network Pruning](network_compression/network_pruning.md)
+* [Transformer](transformer/transformer.md)
+    * [Variant of Transformers](transformer/variant_of_transformers.md)
+* [Conditional Generation by RNN & Attention](conditional_generation_by_RNN_&_Attention/conditional_generation_by_RNN_&_Attention.md)
+* [Unsupervised Learning](unsupervised_learning/unsupervised_learning.md)
+    * [Dimension Reduction](unsupervised_learning/dimension_reduction.md)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zfireear/zfireear.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
