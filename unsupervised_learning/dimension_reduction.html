@@ -1,0 +1,1102 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Dimension Reduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="neighbor_embedding.html" />
+    
+    
+    <link rel="prev" href="unsupervised_learning.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../markdown_math_syntax.html">
+            
+                <a href="../markdown_math_syntax.html">
+            
+                    
+                    Markdown Math Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../gradient_descent/gradient_descent.html">
+            
+                <a href="../gradient_descent/gradient_descent.html">
+            
+                    
+                    Gradient Descent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../gradient_descent/more_about_gradient_descent.html">
+            
+                <a href="../gradient_descent/more_about_gradient_descent.html">
+            
+                    
+                    More about Gradient Descent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../gradient_descent/new_optimization.html">
+            
+                <a href="../gradient_descent/new_optimization.html">
+            
+                    
+                    New Optimazation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../classification/classification.html">
+            
+                <a href="../classification/classification.html">
+            
+                    
+                    Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../logistic_regression/logistic_regression.html">
+            
+                <a href="../logistic_regression/logistic_regression.html">
+            
+                    
+                    Logistic Regression
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../logistic_regression/lrcode.html">
+            
+                <a href="../logistic_regression/lrcode.html">
+            
+                    
+                    LRCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../deep_learning/deep_learning.html">
+            
+                <a href="../deep_learning/deep_learning.html">
+            
+                    
+                    Deep Learing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../deep_learning/tips_for_deep_learning.html">
+            
+                <a href="../deep_learning/tips_for_deep_learning.html">
+            
+                    
+                    Tips for Deep Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../pytorch/pytorch.html">
+            
+                <a href="../pytorch/pytorch.html">
+            
+                    
+                    Pytorch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../pytorch/main_mdel_introduction.html">
+            
+                <a href="../pytorch/main_mdel_introduction.html">
+            
+                    
+                    Main Model Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../pytorch/three_kinds_of_data.html">
+            
+                <a href="../pytorch/three_kinds_of_data.html">
+            
+                    
+                    three kinds of data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../pytorch/real_data_representaion.html">
+            
+                <a href="../pytorch/real_data_representaion.html">
+            
+                    
+                    real world data representation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../pytorch/walking_through_a_learning_algorithm_from_scratch.html">
+            
+                <a href="../pytorch/walking_through_a_learning_algorithm_from_scratch.html">
+            
+                    
+                    The mechanics of learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../pytorch/autograd.html">
+            
+                <a href="../pytorch/autograd.html">
+            
+                    
+                    Backpropagate all things
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../pytorch/training_validation_overfitting.html">
+            
+                <a href="../pytorch/training_validation_overfitting.html">
+            
+                    
+                    Training, validation, and overfitting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../pytorch/neural_network.html">
+            
+                <a href="../pytorch/neural_network.html">
+            
+                    
+                    Neural Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../pytorch/nn_module.html">
+            
+                <a href="../pytorch/nn_module.html">
+            
+                    
+                    NN Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../pytorch/subclassing_nn_module.html">
+            
+                <a href="../pytorch/subclassing_nn_module.html">
+            
+                    
+                    Subclassing NN Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../pytorch/pre-trained_network.html">
+            
+                <a href="../pytorch/pre-trained_network.html">
+            
+                    
+                    Pre-trained Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../pytorch/image_classification.html">
+            
+                <a href="../pytorch/image_classification.html">
+            
+                    
+                    Image Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../pytorch/problem_set_of_pytorch.html">
+            
+                <a href="../pytorch/problem_set_of_pytorch.html">
+            
+                    
+                    Problem Set of PyTorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../convolutional_neural_network/cnn.html">
+            
+                <a href="../convolutional_neural_network/cnn.html">
+            
+                    
+                    Convolutional Neural network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../convolutional_neural_network/cnn_network_structure.html">
+            
+                <a href="../convolutional_neural_network/cnn_network_structure.html">
+            
+                    
+                    CNN Network Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../convolutional_neural_network/common_cnn.html">
+            
+                <a href="../convolutional_neural_network/common_cnn.html">
+            
+                    
+                    Common CNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../convolutional_neural_network/cnn_aplication.html">
+            
+                <a href="../convolutional_neural_network/cnn_aplication.html">
+            
+                    
+                    CNN Aplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../graph_neural_network/graph_neural_network.html">
+            
+                <a href="../graph_neural_network/graph_neural_network.html">
+            
+                    
+                    Graph Neural Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../graph_neural_network/introduce_to_graph_neural_network.html">
+            
+                <a href="../graph_neural_network/introduce_to_graph_neural_network.html">
+            
+                    
+                    Introduce to Graph Neural Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../graph_neural_network/Spatial_based_gnn.html">
+            
+                <a href="../graph_neural_network/Spatial_based_gnn.html">
+            
+                    
+                    Spatial-based GNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../graph_neural_network/Spectral_based_gnn.html">
+            
+                <a href="../graph_neural_network/Spectral_based_gnn.html">
+            
+                    
+                    Spectral_based_gnn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../recurrent_neural_network/recurrent_neural_network.html">
+            
+                <a href="../recurrent_neural_network/recurrent_neural_network.html">
+            
+                    
+                    Recurrent Neural Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../recurrent_neural_network/recursive_structure.html">
+            
+                <a href="../recurrent_neural_network/recursive_structure.html">
+            
+                    
+                    Recursive Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../semi_supervised/semi_supervised.html">
+            
+                <a href="../semi_supervised/semi_supervised.html">
+            
+                    
+                    Semi-supervised
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../word_embedding/word_embedding.html">
+            
+                <a href="../word_embedding/word_embedding.html">
+            
+                    
+                    Word Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../explainable_machine_learning/explainable_machine_learning.html">
+            
+                <a href="../explainable_machine_learning/explainable_machine_learning.html">
+            
+                    
+                    Explainable Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../attack_ml_models/attack_ml_models.html">
+            
+                <a href="../attack_ml_models/attack_ml_models.html">
+            
+                    
+                    Attack ML Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../attack_ml_models/attack_image_and_audio.html">
+            
+                <a href="../attack_ml_models/attack_image_and_audio.html">
+            
+                    
+                    Attack image and audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../network_compression/network_compression.html">
+            
+                <a href="../network_compression/network_compression.html">
+            
+                    
+                    Network Compression
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../network_compression/knowledge_distillation.html">
+            
+                <a href="../network_compression/knowledge_distillation.html">
+            
+                    
+                    Knowledge Distillation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../network_compression/network_pruning.html">
+            
+                <a href="../network_compression/network_pruning.html">
+            
+                    
+                    Network Pruning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../transformer/transformer.html">
+            
+                <a href="../transformer/transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../transformer/variant_of_transformers.html">
+            
+                <a href="../transformer/variant_of_transformers.html">
+            
+                    
+                    Variant of Transformers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../conditional_generation_by_RNN_&_Attention/conditional_generation_by_RNN_&_Attention.html">
+            
+                <a href="../conditional_generation_by_RNN_&_Attention/conditional_generation_by_RNN_&_Attention.html">
+            
+                    
+                    Conditional Generation by RNN & Attention
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="unsupervised_learning.html">
+            
+                <a href="unsupervised_learning.html">
+            
+                    
+                    Unsupervised Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.18.1" data-path="dimension_reduction.html">
+            
+                <a href="dimension_reduction.html">
+            
+                    
+                    Dimension Reduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="neighbor_embedding.html">
+            
+                <a href="neighbor_embedding.html">
+            
+                    
+                    Neighbor Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="deep_auto_encoder.html">
+            
+                <a href="deep_auto_encoder.html">
+            
+                    
+                    Deep Auto-encoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../bert_and_its_family/bert_and_its_family.html">
+            
+                <a href="../bert_and_its_family/bert_and_its_family.html">
+            
+                    
+                    Bert and its Family
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../bert_and_its_family/bert.html">
+            
+                <a href="../bert_and_its_family/bert.html">
+            
+                    
+                    Bert
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../nlp/natural_language_processing.html">
+            
+                <a href="../nlp/natural_language_processing.html">
+            
+                    
+                    Natual Language Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../nlp/introduction.html">
+            
+                <a href="../nlp/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../anomaly_detection/anomaly_detection.html">
+            
+                <a href="../anomaly_detection/anomaly_detection.html">
+            
+                    
+                    Anomaly Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Dimension Reduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dimension-reduction">Dimension Reduction</h1>
+<h2 id="clustering">Clustering</h2>
+<ul>
+<li><p>K-means</p>
+<ul>
+<li>Clustering $X = \lbrace x^1,\cdots,x^n,\cdots,x^N \rbrace$ into K clusters</li>
+<li>Initialize cluster center $c^i,i=1,2,\cdots,K$ (K random $x^n$ from $X$)</li>
+<li>Repeat<ul>
+<li>For all $x^n$ in $X$ :<br>$b_i^n = \begin{cases}
+  1, &amp; x^n\quad is\quad most\quad &quot;close&quot;\quad to\quad c^i \
+  0, &amp; Otherwise
+  \end{cases}$</li>
+<li>Updating all $c^i$ :<br>$c^i = \dfrac{\sum<em>{x^n}b_i^nx^n}{\sum</em>{x^n}b_i^n}$  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Hierarchical Agglomerative Clustering(HAC)</p>
+<ul>
+<li>Step 1 : build a tree according to their degree of similarity</li>
+<li>Step 2 : pick a threshold to cluster node</li>
+</ul>
+</li>
+</ul>
+<h2 id="clustering-vs-distributed-representation">Clustering v.s. Distributed representation</h2>
+<ul>
+<li>Clustering : an object must belong to one cluster</li>
+<li>Distributed representation : a probability distribution representation</li>
+</ul>
+<h2 id="distributed-representation">Distributed Representation</h2>
+<p><script type="math/tex; ">Highdimvectorx \rightarrow function \rightarrow Lowdimvectorz</script></p>
+<ul>
+<li>Feature selection<br>discard certain dim of feature to reduce dimesion</li>
+<li>Principle component analysis(PCA)</li>
+</ul>
+<h2 id="principle-component-analysispca">Principle component analysis(PCA)</h2>
+<p><script type="math/tex; ">z = Wx</script><br><em>Reduce to 1-D</em> :<br><script type="math/tex; ">z_1 = w^1 \times x</script><br>Project all the data points $x$ onto $w^1$, and obtain a set of $z_1$. We want the variance of $z_1$ as large as possible.</p>
+<p><script type="math/tex; ">Var(z_1) = \frac{1}{N}\sum_{z_1}(z_1 - \overline{z_1})^2</script>  </p>
+<p>Constaint : $\left|w^1\right|_2=1$  </p>
+<p>If want to <em>reduce to 2-D</em>, just add another $z_2$ :
+<script type="math/tex; ">z_2 = w^2 \times x</script><br>We also want the variance of $z_2$ as large as possible</p>
+<p><script type="math/tex; ">Var(z_2) = \frac{1}{N}\sum_{z_2}(z_2 - \overline{z_2})^2</script>  </p>
+<p>Contraint : $\left|w^2\right|_2=1$ and $w^1\times w^2 = 0$  </p>
+<p>And then concatenate $z_2$ with $z_1$ as Z.</p>
+<p>Repeate above operation to attain any dimension we want to reduce to. Finally, concatenate all $w$ as $W$ : 
+<script type="math/tex; ">W = \begin{bmatrix} (w^1)^T\\(w^2)^T \\ \vdots \end{bmatrix}</script>
+W is a Orthogonal matrix</p>
+<h2 id="math-part----lagrange-multiplier">Math part -- Lagrange multiplier</h2>
+<blockquote>
+<p>$a,b$ are vectors
+<script type="math/tex; ">(a \cdot b)^2 = (a^Tb)^2=a^Tba^Tb=a^Tb(a^Tb)^T=a^Tbb^Ta</script></p>
+</blockquote>
+<p><strong>Matrix W Calculation of PCA</strong></p>
+<p><script type="math/tex; ">z_1 = w^1 \cdot x</script>
+<script type="math/tex; ">\overline{z_1}=\frac{1}{N}\sum z_1=\frac{1}{N}\sum w^1 \cdot x = w^1 \cdot \frac{1}{N}\sum x=w^1\cdot \overline{x}</script>
+<script type="math/tex; ">Var(z_1)=\frac{1}{N}\sum_{z^1}(z_1-\overline{z_1})^2=\frac{1}{N}\sum (w^1\cdot x - w^1\cdot \overline{x})^2</script>
+<script type="math/tex; ">=\frac{1}{N}\sum (w^1\cdot (x - \overline{x}))^2=\frac{1}{N}\sum (w^1)^T(x-\overline{x})(x-\overline{x})^Tw^1</script>
+<script type="math/tex; ">=(w^1)^T\frac{1}{N}\sum(x-\overline{x})(x-\overline{x})^Tw^1=(w^1)^TCov(x)w^1</script><br>$S=Cov(x)$ is symmetric and positive-semidefinite(non-negative eigenvalues) </p>
+<p>Goal : Find $w^1$ maximizing $(w^1)^T\cdot S\cdot (w^1)$, and constraint $\left|w^1\right|_2=(w^1)^Tw^1=1$</p>
+<p>Solution : Using Lagrange multipier
+<script type="math/tex; ">g(w^1)=(w^1)^TSw^1-\alpha((w^1)^Tw^1-1)</script></p>
+<p>Differentiate with respect to every element of $w^1$,$w^1$ is a vector, and let the gradient to be zero :<br><script type="math/tex; ">\dfrac{\partial g(w^1)}{\partial w_1^1}=0</script><br><script type="math/tex; ">\dfrac{\partial g(w^1)}{\partial w_1^2=0}=0</script><br><script type="math/tex; ">\qquad \vdots</script>  </p>
+<p>After above calculation,We attain :<br><script type="math/tex; ">Sw^1-\alpha w^1=0</script> 
+<script type="math/tex; ">Sw^1 = \alpha w^1</script><br><script type="math/tex; ">(w^1)^TSw^1 = \alpha(w^1)^Tw^1=\alpha</script><br>$w^1$ : eigenvector<br>$\alpha$ is to be the maximun one</p>
+<p>Conclusioin : $w^1$ is the eigenvector of the covariance matrix $S$ correpondind to the largest eigenvalue $\lambda_1$ (above $\alpha$)</p>
+<p>Find $w^2$ maximizing $(w^2)^TSw^2$, and constraint $\left|w^2\right|_2 = 1,(w^2)^Tw^2=1 , (w^2)^Tw^1=0$
+<script type="math/tex; ">g(w^2)=(w^2)^TSw^2 - \alpha((w^2)^Tw^2-1) - \beta((w^2)^Tw^1 - 0)</script></p>
+<p>Differentiate with respect to every element of $w^2$,$w^2$ is a vector, and let the gradient to be zero :<br><script type="math/tex; ">\dfrac{\partial g(w^2)}{\partial w_1^2}=0</script><br><script type="math/tex; ">\dfrac{\partial g(w^2)}{\partial w_1^2=0}=0</script><br><script type="math/tex; ">\qquad \vdots</script></p>
+<p>After above calculation,We attain :<br><script type="math/tex; ">Sw^2 - \alpha w^2 - \beta w^1 = 0</script>  </p>
+<p>Multiply both sides of above equation by $w^1$:<br><script type="math/tex; ">(w^1)^TSw^2 - \alpha(w^1)^Tw^2 - \beta(w^1)^Tw^1 = 0</script>  </p>
+<p>$\because (w^2)^Tw^2=1 , (w^2)^Tw^1=0$ and $S$ is symmetric. $Sw^1=\lambda_1w^1$.So we attain:</p>
+<p><script type="math/tex; ">=(w^1)^TSw^2 - \beta =((w^1)^TSw^2)^T - \beta = (w^2)^TS^Tw^1</script><br><script type="math/tex; ">=(w^2)^TSw^1 - \beta = \lambda_1(w^2)^Tw^1 - \beta = 0- \beta = 0</script>  </p>
+<p>$\beta = 0$ : $Sw^2 - \alpha w^2 =0 \rightarrow Sw^2=\alpha^2$</p>
+<p>Conclusion : $w^2$ is the eigenvector of the covariance matrix $S$ corresponding to the $2^{nd}$ largest eigenvalue $\lambda_2$</p>
+<h2 id="pca---decorrelation">PCA - Decorrelation</h2>
+<p><script type="math/tex; ">z = Wx</script>
+Covariance of $z$ is a diagonal matrix.
+<script type="math/tex; ">Cov(z) = D</script>
+After PCA, it is equivalent to do decorrelation, which makes covariance of different dimension to become zero. So there is not correlation in the feature of different dimension after PCA and then your parameters reduce. It is also benefit to reduce overfitting.</p>
+<p><script type="math/tex; ">Cov(z)=\frac{1}{N}\sum (z-\overline{z})(z-\overline{z})^T=WSW^T</script>
+<script type="math/tex; ">=WS[w^1 \cdots w^k] = W[Sw^1 \cdots Sw^k]</script>
+<script type="math/tex; ">= W[\lambda_1w^1 \cdots \lambda_kw^k] = [\lambda_1Ww^1 \cdots \lambda_kWw^k]</script>
+<script type="math/tex; ">= [\lambda_1e_1 \cdots \lambda_ke_k] = D</script></p>
+<h2 id="pca-another-point-of-view">PCA-Another Point of View</h2>
+<p>Assuming we have some basic components $u^1,u^2,\cdots,u^k$, we can use a vector $[c_1,c_2,\cdots,c_k]$ with basic components to represent a digit image. $x$ is pixels in a digit image.
+<script type="math/tex; ">x \approx c_1u^1 + c_2u^2 + \cdots + c_ku^k + \overline{x}</script>
+<script type="math/tex; ">x - \overline{x} \approx c_1u^1 + c_2u^2 + \cdots + c_ku^k = \hat{x}</script></p>
+<p>Reconstruction error: $\left|(x - \overline{x}) - \hat{x}\right|_2$ </p>
+<p>Goal : Find $u^1,\cdots,u^k$ minimizing the error.</p>
+<p><script type="math/tex; ">L = \underset{\lbrace u^1,\cdots,u^k \rbrace}{\min}\sum \left\| (x - \overline{x}) - \left(\sum_{k=1}^kc_ku^k\right) \right\|_2</script></p>
+<p>we know that PCA : $z = Wx$</p>
+<p><script type="math/tex; ">\begin{bmatrix} z_1\\z_2 \\ \vdots\\z_k \end{bmatrix} = \begin{bmatrix} (w^1)^T\\(w^2)^T \\ \vdots \\(w_k)^k\end{bmatrix}x</script></p>
+<p>Actually, $\lbrace w^1,w^2,\cdots,w^k\rbrace$ (from PCA) is the component $\lbrace u^1,u^2,\cdots,u^k\rbrace$</p>
+<p><script type="math/tex; ">\hat{x} = \sum_{k=1}^Kc_kw^k \longleftrightarrow x - \overline{x}</script></p>
+<p>To minimizer reconstruction error : 
+<script type="math/tex; ">C_k = (x - \overline{x})\cdot w^k</script>
+Because these $\lbrace w^1,w^2,\cdots,w^k\rbrace$ vectors are orthonormal.</p>
+<h2 id="auto-encoder">Auto-encoder</h2>
+<p><strong>PCA looks like a neural network with one hidden layer(linear activatioin function)</strong>, but the result of PCA is better the neural network with one hidden layer. But it can be deep, which is called Deep Autoencoder.</p>
+<h2 id="weakness-of-pca">Weakness of PCA</h2>
+<ol>
+<li>As PCA apply on unsupervised situation, PCA is likely to merge different classes onto a single dimension, which different calsses are mixed and hard to distinguish.<br>To solve this problem, you need to use lable data. LDA(Linear discriminant analysis) is a supervised method, which is a dimensionality reduction approach to consider label data.</li>
+<li>PCA is linear transformation. So it can&apos;t deal with non-linear dimension reduction.</li>
+</ol>
+<h2 id="faq">FAQ</h2>
+<p>Question : How many principal components?<br>Solution : To calculate variance of each principal components based on its eigenvalue, consider the big eigenvectors and ingore the small eigenvectors.</p>
+<p>Question : What happens to PCA?<br>Answer : It is worth noting that the components may not be parts of digits(suppose it&apos;s a MNIST task) as weight can be any real number. PCA involves adding up and subtrcting some components.<br>Another technology is NMF(Non-negative matrix factorization). PCA can be regard as a SVD(Singular Value Decomposition) opration on data matrix, while the decomposed value can be positive or negative. However, when it comes to NMF, it will force all components and weight to be non-negative. So NMF only have additive combination opration and is more like parts of digits.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="unsupervised_learning.html" class="navigation navigation-prev " aria-label="Previous page: Unsupervised Learning">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="neighbor_embedding.html" class="navigation navigation-next " aria-label="Next page: Neighbor Embedding">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Dimension Reduction","level":"1.18.1","depth":2,"next":{"title":"Neighbor Embedding","level":"1.18.2","depth":2,"path":"unsupervised_learning/neighbor_embedding.md","ref":"unsupervised_learning/neighbor_embedding.md","articles":[]},"previous":{"title":"Unsupervised Learning","level":"1.18","depth":1,"path":"unsupervised_learning/unsupervised_learning.md","ref":"unsupervised_learning/unsupervised_learning.md","articles":[{"title":"Dimension Reduction","level":"1.18.1","depth":2,"path":"unsupervised_learning/dimension_reduction.md","ref":"unsupervised_learning/dimension_reduction.md","articles":[]},{"title":"Neighbor Embedding","level":"1.18.2","depth":2,"path":"unsupervised_learning/neighbor_embedding.md","ref":"unsupervised_learning/neighbor_embedding.md","articles":[]},{"title":"Deep Auto-encoder","level":"1.18.3","depth":2,"path":"unsupervised_learning/deep_auto_encoder.md","ref":"unsupervised_learning/deep_auto_encoder.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","katex"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"unsupervised_learning/dimension_reduction.md","mtime":"2020-07-20T13:54:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-20T14:05:14.223Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
