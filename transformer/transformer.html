@@ -1,0 +1,1217 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Transformer · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="variant_of_transformers.html" />
+    
+    
+    <link rel="prev" href="../network_compression/network_pruning.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../markdown_math_syntax.html">
+            
+                <a href="../markdown_math_syntax.html">
+            
+                    
+                    Markdown Math Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../gradient_descent/gradient_descent.html">
+            
+                <a href="../gradient_descent/gradient_descent.html">
+            
+                    
+                    Gradient Descent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../gradient_descent/more_about_gradient_descent.html">
+            
+                <a href="../gradient_descent/more_about_gradient_descent.html">
+            
+                    
+                    More about Gradient Descent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../gradient_descent/new_optimization.html">
+            
+                <a href="../gradient_descent/new_optimization.html">
+            
+                    
+                    New Optimazation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../classification/classification.html">
+            
+                <a href="../classification/classification.html">
+            
+                    
+                    Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../logistic_regression/logistic_regression.html">
+            
+                <a href="../logistic_regression/logistic_regression.html">
+            
+                    
+                    Logistic Regression
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../logistic_regression/lrcode.html">
+            
+                <a href="../logistic_regression/lrcode.html">
+            
+                    
+                    LRCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../deep_learning/deep_learning.html">
+            
+                <a href="../deep_learning/deep_learning.html">
+            
+                    
+                    Deep Learing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../deep_learning/tips_for_deep_learning.html">
+            
+                <a href="../deep_learning/tips_for_deep_learning.html">
+            
+                    
+                    Tips for Deep Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../pytorch/pytorch.html">
+            
+                <a href="../pytorch/pytorch.html">
+            
+                    
+                    Pytorch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../pytorch/main_mdel_introduction.html">
+            
+                <a href="../pytorch/main_mdel_introduction.html">
+            
+                    
+                    Main Model Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../pytorch/three_kinds_of_data.html">
+            
+                <a href="../pytorch/three_kinds_of_data.html">
+            
+                    
+                    three kinds of data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../pytorch/real_data_representaion.html">
+            
+                <a href="../pytorch/real_data_representaion.html">
+            
+                    
+                    real world data representation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../pytorch/walking_through_a_learning_algorithm_from_scratch.html">
+            
+                <a href="../pytorch/walking_through_a_learning_algorithm_from_scratch.html">
+            
+                    
+                    The mechanics of learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../pytorch/autograd.html">
+            
+                <a href="../pytorch/autograd.html">
+            
+                    
+                    Backpropagate all things
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../pytorch/training_validation_overfitting.html">
+            
+                <a href="../pytorch/training_validation_overfitting.html">
+            
+                    
+                    Training, validation, and overfitting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../pytorch/neural_network.html">
+            
+                <a href="../pytorch/neural_network.html">
+            
+                    
+                    Neural Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../pytorch/nn_module.html">
+            
+                <a href="../pytorch/nn_module.html">
+            
+                    
+                    NN Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../pytorch/subclassing_nn_module.html">
+            
+                <a href="../pytorch/subclassing_nn_module.html">
+            
+                    
+                    Subclassing NN Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../pytorch/pre-trained_network.html">
+            
+                <a href="../pytorch/pre-trained_network.html">
+            
+                    
+                    Pre-trained Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../pytorch/image_classification.html">
+            
+                <a href="../pytorch/image_classification.html">
+            
+                    
+                    Image Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../pytorch/problem_set_of_pytorch.html">
+            
+                <a href="../pytorch/problem_set_of_pytorch.html">
+            
+                    
+                    Problem Set of PyTorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../convolutional_neural_network/cnn.html">
+            
+                <a href="../convolutional_neural_network/cnn.html">
+            
+                    
+                    Convolutional Neural network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../convolutional_neural_network/cnn_network_structure.html">
+            
+                <a href="../convolutional_neural_network/cnn_network_structure.html">
+            
+                    
+                    CNN Network Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../convolutional_neural_network/common_cnn.html">
+            
+                <a href="../convolutional_neural_network/common_cnn.html">
+            
+                    
+                    Common CNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../convolutional_neural_network/cnn_aplication.html">
+            
+                <a href="../convolutional_neural_network/cnn_aplication.html">
+            
+                    
+                    CNN Aplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../graph_neural_network/graph_neural_network.html">
+            
+                <a href="../graph_neural_network/graph_neural_network.html">
+            
+                    
+                    Graph Neural Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../graph_neural_network/introduce_to_graph_neural_network.html">
+            
+                <a href="../graph_neural_network/introduce_to_graph_neural_network.html">
+            
+                    
+                    Introduce to Graph Neural Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../graph_neural_network/Spatial_based_gnn.html">
+            
+                <a href="../graph_neural_network/Spatial_based_gnn.html">
+            
+                    
+                    Spatial-based GNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../graph_neural_network/Spectral_based_gnn.html">
+            
+                <a href="../graph_neural_network/Spectral_based_gnn.html">
+            
+                    
+                    Spectral_based_gnn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../recurrent_neural_network/recurrent_neural_network.html">
+            
+                <a href="../recurrent_neural_network/recurrent_neural_network.html">
+            
+                    
+                    Recurrent Neural Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../recurrent_neural_network/recursive_structure.html">
+            
+                <a href="../recurrent_neural_network/recursive_structure.html">
+            
+                    
+                    Recursive Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../semi_supervised/semi_supervised.html">
+            
+                <a href="../semi_supervised/semi_supervised.html">
+            
+                    
+                    Semi-supervised
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../word_embedding/word_embedding.html">
+            
+                <a href="../word_embedding/word_embedding.html">
+            
+                    
+                    Word Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../explainable_machine_learning/explainable_machine_learning.html">
+            
+                <a href="../explainable_machine_learning/explainable_machine_learning.html">
+            
+                    
+                    Explainable Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../attack_ml_models/attack_ml_models.html">
+            
+                <a href="../attack_ml_models/attack_ml_models.html">
+            
+                    
+                    Attack ML Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../attack_ml_models/attack_image_and_audio.html">
+            
+                <a href="../attack_ml_models/attack_image_and_audio.html">
+            
+                    
+                    Attack image and audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../network_compression/network_compression.html">
+            
+                <a href="../network_compression/network_compression.html">
+            
+                    
+                    Network Compression
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../network_compression/knowledge_distillation.html">
+            
+                <a href="../network_compression/knowledge_distillation.html">
+            
+                    
+                    Knowledge Distillation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../network_compression/network_pruning.html">
+            
+                <a href="../network_compression/network_pruning.html">
+            
+                    
+                    Network Pruning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="transformer.html">
+            
+                <a href="transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="variant_of_transformers.html">
+            
+                <a href="variant_of_transformers.html">
+            
+                    
+                    Variant of Transformers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../conditional_generation_by_RNN_&_Attention/conditional_generation_by_RNN_&_Attention.html">
+            
+                <a href="../conditional_generation_by_RNN_&_Attention/conditional_generation_by_RNN_&_Attention.html">
+            
+                    
+                    Conditional Generation by RNN & Attention
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../unsupervised_learning/unsupervised_learning.html">
+            
+                <a href="../unsupervised_learning/unsupervised_learning.html">
+            
+                    
+                    Unsupervised Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../unsupervised_learning/dimension_reduction.html">
+            
+                <a href="../unsupervised_learning/dimension_reduction.html">
+            
+                    
+                    Dimension Reduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../unsupervised_learning/neighbor_embedding.html">
+            
+                <a href="../unsupervised_learning/neighbor_embedding.html">
+            
+                    
+                    Neighbor Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../unsupervised_learning/deep_auto_encoder.html">
+            
+                <a href="../unsupervised_learning/deep_auto_encoder.html">
+            
+                    
+                    Deep Auto-encoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../bert_and_its_family/bert_and_its_family.html">
+            
+                <a href="../bert_and_its_family/bert_and_its_family.html">
+            
+                    
+                    Bert and its Family
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../bert_and_its_family/bert.html">
+            
+                <a href="../bert_and_its_family/bert.html">
+            
+                    
+                    Bert
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../nlp/natural_language_processing.html">
+            
+                <a href="../nlp/natural_language_processing.html">
+            
+                    
+                    Natual Language Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../nlp/introduction.html">
+            
+                <a href="../nlp/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../anomaly_detection/anomaly_detection.html">
+            
+                <a href="../anomaly_detection/anomaly_detection.html">
+            
+                    
+                    Anomaly Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Transformer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="transformer">Transformer</h1>
+<blockquote>
+<p>Recommend Reading material :   </p>
+<ol>
+<li><p><a href="https://jalammar.github.io/illustrated-transformer/" target="_blank">illustrated-transformer</a></p>
+</li>
+<li><p><a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650742155&amp;idx=1&amp;sn=137825a13a4c31fffb6b2347c0304366&amp;chksm=871ad9f5b06d50e31e2857a08a4a9ae9f57fd0191be580952d80f1518779594670cccc903fbe&amp;scene=21#wechat_redirect" target="_blank">&#x57FA;&#x4E8E;&#x6CE8;&#x610F;&#x529B;&#x673A;&#x5236;&#xFF0C;&#x673A;&#x5668;&#x4E4B;&#x5FC3;&#x5E26;&#x4F60;&#x7406;&#x89E3;&#x4E0E;&#x8BAD;&#x7EC3;&#x795E;&#x7ECF;&#x673A;&#x5668;&#x7FFB;&#x8BD1;&#x7CFB;&#x7EDF;</a></p>
+</li>
+</ol>
+</blockquote>
+<p>Transformer, the model extends attention to accelerate training, and the biggest advantage is that it can be parallelized.</p>
+<p>Transformer is proposed in &quot;<a href="https://arxiv.org/abs/1706.03762" target="_blank">Attention is All You Need</a>&quot;, where TF application is a sub-module of <a href="https://github.com/tensorflow/tensor2tensor" target="_blank">Tensor2Tensor</a>. Harvard&apos;s NLP team specially produced the corresponding PyTorch&apos;s <a href="http://nlp.seas.harvard.edu/2018/04/03/attention.html" target="_blank">Guide Notes</a>.</p>
+<p>Check the 
+<a href="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9icbicicqO5VlBLqWvjSQuDrbDsyoBUIGjbxocOs31HbHpPQhwOl0hOiaVrkKQHUjuUI3Fe7mNxGOhvg/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" target="_blank">transformer structure image</a></p>
+<h2 id="a-highlevel-look">A High_Level Look</h2>
+<p>We first treat the entire model as a black box. For example, in machine translation, a sentence in one language is received as input, and then it is translated into other languages &#x200B;&#x200B;for output. <img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226184150-335044.png" alt="image-20200226184149942"></p>
+<p>Take a closer look, it consists of encoding components, decoding components and the connection layer between them.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226185545-765586.png" alt="image-20200226185543585"></p>
+<p>The encoded part of the model is a stack of encoders, and the decoded part of the model is a stack of the same number of decoders</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226191123-12424.png" alt="image-20200226191121778"></p>
+<p>The input of the encoder first enters a <strong>self-attention</strong> layer, which helps the encoder to see other words in the input sequence when encoding a word</p>
+<p>The output of self-attention flows to a feedforward network, and the feedforward network corresponding to each input position is independent of each other.</p>
+<p>The decoder also has these sub-layers, but an attention layer is added between the two sub-layers, which helps the decoder to pay attention to the relevant part of the input sentence.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226191354-3363.png" alt="image-20200226191352743"></p>
+<h2 id="bringing-the-tensors-into-the-picture">Bringing The Tensors Into The Picture</h2>
+<p>Let&apos;s analyze the most important part of the model, starting with Vectors/Tensors, and observe how they flow through each component and output.</p>
+<p>As a common example of NLP application, first convert the input word into a vector using <a href="https://medium.com/deeper-learning/glossary-of-deep-learning-word-embedding-f90c3cec34ca" target="_blank">embedding algorithm</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226213049-312489.png" alt="image-20200226213047935"></p>
+<p>The vectorization of words only occurs at the input of the lowest encoder, so that each encoder will receive a list (each element is a 512-dimensional word vector), but the input of other encoders is the output of the previous encoder. The size of the list is a super parameter that can be set, usually the length of the longest sentence in the training set.</p>
+<p>After vectorizing the input sequence, they flow through the following two sublayers of the encoder.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226232657-877655.png" alt="image-20200226231909842"></p>
+<p>A key feature of Transformer can be seen here, the word at each position only flows through its own encoder path. In the self-attention layer, these paths are interdependent. <strong>The forward network layer does not have these dependencies</strong>, but these paths can be executed in parallel when flowing through the forward network</p>
+<p>Next, we give a simple example, and then look at what happens in each sublayer of the encoder</p>
+<h3 id="now-were-encoding"><em>Now We&#x2019;re Encoding!</em></h3>
+<p>As mentioned earlier, the encoder receives the input of the vector list and feeds it into self-attention, then feeds it into the forward network, and finally passes the input to the next encoder</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226233453-347194.png" alt="image-20200226233452340"></p>
+<p>The word vectors at each position in the figure above are fed into the self-attention module, followed by the forward network (the exact same network structure for each vector).</p>
+<h2 id="self-attention-at-a-high-level">Self-Attention at a High Level</h2>
+<p>Take the following sentence as an example, as the input sentence &quot;The animal didn&#x2019;t cross the street because it was too tired&quot; that we want to translate. What does &quot;it&quot; mean in the sentence? Does &quot;it&quot; mean &quot;street&quot; or &quot;animal&quot;? Very simple question for humans, but not simple for algorithms</p>
+<p>When the model deals with the word &quot;it&quot;, self-attention allows the connection between &quot;it&quot; and &quot;animal&quot;.</p>
+<p>While the model works with words in each position, self-attention allows the model to focus on other position information in the sentence as auxiliary information (cues) to better encode the current word</p>
+<p>Transformer uses Self-attention to encode the &quot;understanding&quot; of related words in the current word</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226233539-739966.png" alt="image-20200226233537955"></p>
+<p>As we use #5 encoder to encode The word &apos;it&apos;, part of the Attention will focus on The word &apos;The Animal&apos; and incorporate some of its representation into The encoding of the word &apos;it&apos;</p>
+<h3 id="attentional-mechanisms">Attentional mechanisms</h3>
+<p>In the original paper, Google showed a general definition of attention mechanism, that is, it is a coding sequence scheme like RNN or CNN. An attention function can be described as mapping query and a set of key value pairs to output, where query, key, value and output are vectors. The output can be calculated by the weighted sum of the values, and the weight assigned to each value can be calculated by query and the compatibility function of the corresponding key.</p>
+<p>In translation tasks,Query can be regarded as the original word vector sequence, while Key and Value can be regarded as the target word vector sequence. The general attention mechanism can be interpreted as calculating the similarity between Query and Key, and using this similarity to determine the attention relationship between Query and Value. In order wors, the operation between Query and Key is equivalent to calculating the internal similarity of the input sequence, and paying attention to the internal connection of the sequence itself (Value) based on this similarity or weight. This internal connection may be that the subject notices the information of the predicate and object or other structures hidden in the sentence.</p>
+<p><strong>Scaled Dot Product Attention</strong><br>The input is composed of Query and Key vector whose dimensions are $d_k$, and Value vector whose dimension is $d_v$. We will first calculate the dot product of Query and all Keys, and divide each by <code>squre_root(d_k)</code> to prevent the product result from being too large, and then feed it to the Softmax function to obtain the weight corresponding to Value. With these weights, we can configure the Value vector to get the final output.</p>
+<p><script type="math/tex; ">Attention(Q,K,V) = softmax(\frac{QK^T}{\sqrt{d_k}})V</script></p>
+<blockquote>
+<p><strong>More detials about Scaled Dot Product Attention</strong><br>In the above formula, the dot product of Q and K will be divided by squre_root($d_k$) to achieve scaling. The author of the original paper found that when the dimension $d_k$ of each Query is relatively small, the performance of dotted attention and additive attention is similar, but as $d_k$ increases, the performance of additive attention will exceed the dotted attention mechanism. However, dot multiplication attention has a powerful property, that is, it can use the parallel operation of matrix multiplication to greatly speed up training.<br>The author of the original paper thought that the reason of the poor effect of dot product attention was that when $d_k$ is relatively large, the product result will be very large, so it will cause Softmax to quickly saturate and only provide a very small gradient to update the parameters. So they adopted the square root of $d_k$ to reduce the dot product result and prevent the Softmax function from saturating.<br>In order to prove why the magnitude of the dot product becomes very large, we assume that the vector $Q$ and $K$ are both independent random variables with mean 0 and variance 1, and their dot product $Q&#x22C5;K=\sum_iq_i \cdot k_i$ has 0 mean and the variance $d_k$. To counteract this effect, we can normalize the dot product result by dividing by squre_root($d_k$).</p>
+</blockquote>
+<h2 id="self-attention-in-detail">Self-Attention in Detail</h2>
+<p>Let&apos;s first look at how to calculate the self-attention vector, and then look at how to calculate it in a matrix.</p>
+<p><strong>First step</strong>, according to the input vector of the encoder (in this example, each word Embedding Vector), generate three vectors, for example, for each word vector, generate Query-vector, Key-vector , Value-vector. The generation method is to multiply the three matrices $W^Q, W^K, W^V$, these three matrices need to be learned during the training process. Note: Not every word vector has 3 matrices, but all inputs share 3 conversion matrices;</p>
+<p>Note: the dimensions of these new vectors are smaller than those of the input word vector (512 dimension is converted to 64 dimension), which is not necessary, but to make the calculation of multiheaded attention more stable</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226220456-552343.png" alt="image-20200226220455482"></p>
+<ul>
+<li>q : query(to match others)<br>$q^i = W^qx^i$</li>
+<li>k : key(to be matched)<br>$k^i=W^kx^i$</li>
+<li>v : information to be extracted<br>$v^i = W^vx^i$</li>
+</ul>
+<p>Multiplying $X_1$ by the $W^Q$ weight matrix will result in $q_1$, which is the query vector associated with the word. We finally created a &quot;Queries&quot;, a &quot;Keys&quot; and a &quot;Values&quot; projection for each word in the input sentence.</p>
+<p><strong>Second step</strong>, in fact, we calculate Self-attention is to calculate a score. For example, for the sentence &quot;Thinking Matchines&quot;, when we calculate the score for &quot;Thinking&quot;, we need to calculate the &quot;evaluation score&quot;<em> of each word in the input sentence for the current word &quot;Thinking&quot;, </em> this score determines the encoding &quot; Thinking&quot;, how much attention each input word needs to focus on the current word set.</p>
+<p>The score of the current word is obtained by performing a dot product of the query-vector corresponding to &quot;Thinking&quot; and the key-vecor of all words in the sentence. So when we deal with the word at position #1 (&quot;Thinking&quot;) in the sentence, the first score is the dot product of q1 and k1, and the second score is the dot product of q1 and k2.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226224451-504078.png" alt="image-20200226224449759"></p>
+<p><strong>Steps 3 and 4</strong>, divided by 8 ($=\sqrt{d i m_{k e y}}$), so the gradient will be more stable. Then add the softmax operation and normalize the scores so that all are positive and the sum is 1.</p>
+<p><script type="math/tex; ">a_{1,i}=\dfrac{q^1\times k^i}{\sqrt{d}}</script></p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226225146-937330.png" alt="image-20200226225145518"></p>
+<p>The softmax score determines the degree of expression (attention) of each word in the sentence at this position. Obviously, the word in this position should have the highest softmax score.</p>
+<p><strong>Step 5</strong>, multiply the softmax score by value-vec bit by bit. Keep the value of the word of interest and weaken the value of non-related words (for example, multiply them by decimals such as 0.001).</p>
+<p><strong>Sixth step</strong>, add all the weighted vectors to produce the output of self-attention at that position.</p>
+<p><script type="math/tex; ">z^1 = \sum_i\hat{a}_{1,i}v^i</script></p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226230902-736522.png" alt="image-20200226230901466"></p>
+<p>The above is the calculation process of self-attention, and the generated vectors flow into the forward network. In practical applications, the above calculations are performed in the form of a matrix which speeds up. Below we look at the matrix calculation at the word level.</p>
+<h3 id="matrix-calculation-of-self-attention">Matrix Calculation of Self-Attention</h3>
+<p><strong>First step</strong>, calculate <strong>Query/Key/Value</strong> matrix, and merge <strong>all input embedding vector</strong> into input matrix X (each row of input matrix X represents a word vector of input sentence), And multiply it by our weight matrix after training**$W^Q,W^K,W^V$. (In the figure below, we can see the input embedding vector size X [512 dimensions, represented by four small squares], and the output vector Q/K/V [64 dimensions, represented by three small squares])</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231304-175221.png" alt="image-20200226231303179"></p>
+<p>Finally, since we are dealing with matrices, we can combine steps 2 to 6 into a formula for calculating the output of the self-attention layer, as shown below</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231330-58687.png" alt="image-20200226231328566"></p>
+<p><strong>TIPS</strong> All $z^1,z^2,\cdots$ can be parallelly computed. Merge all input vectors $x^1,x^2,\cdots$ to an ensemble vector $I$. And then multiply it with $W^q,W^k,w^v$ to generate $Q,K,V$ matrix for query, key, value matrix.
+<script type="math/tex; ">Q = I \times W^q</script>
+<script type="math/tex; ">K = I \times W^k</script>
+<script type="math/tex; ">V = I \times W^v</script>
+<script type="math/tex; ">A = K^T\times Q</script>
+<script type="math/tex; ">\hat{A} = \operatorname{softmax}(A)</script>
+<script type="math/tex; ">Z = V \times \hat{A}</script></p>
+<h2 id="multi-head-attention-mechanism">Multi-head Attention Mechanism</h2>
+<p>The following figure shows the Multi-head Attention structure used in Transformer, which is actually multiple dot product attentions that are processed in parallel and finally stitched together. Generally speaking, we can perform h different linear transformations on the three input matrices $Q, V, K$, and then put them into h dot product attention functions and concatenate all the output results.</p>
+<p><a href="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9icbicicqO5VlBLqWvjSQuDrbHo1OE3fZZkPY8CiaCORuia4BZEgA4Luxx0cXovNOWJsV43pM5FNN2nvw/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" target="_blank">Multihead Attention</a></p>
+<p>Multi-head Attention allows the model to jointly pay attention to different representation subspace information at different positions. We can understand it as performing dot product attention multiple times without sharing parameters. The expression of Multi-head Attention is as follows:</p>
+<p><script type="math/tex; ">MultiHead(Q,K,V) = Concat(Head_1,\cdots,Head_h)W</script>
+<script type="math/tex; ">Head_i = Attention(QW_i^Q,KW_i^K,VW_i^V)</script></p>
+<p>Where $W$ is the weight matrix corresponding to the linear transformation, and Attention() is the dot product attention function mentioned above.</p>
+<blockquote>
+<p>In the original paper, the researcher used $h=8$ parallel dot product attention layers to complete Multi-head Attention. For each attention layer, the dimension used in the original paper is $d<em>k=d_v=\dfrac{d</em>{model}}{h}=64$. Since the dimensionality of each parallel attention layer is reduced, the total computational cost is very similar to the cost of a single dot multiplication attention in the full dimension.</p>
+</blockquote>
+<p>Transformer uses Multi-head Attention in three different ways. First of all, in the encoder to decoder level, the Query comes from the output of the previous decoder, and the memorized Key and Value come from the output of the encoder. This allows every position in the decoder to pay attention to all positions in the input sequence, so it actually mimics the typical encoder-decoder attention mechanism in the sequence-to-sequence model.</p>
+<p>Secondly, the encoder layer contains the self-attention layer, and all Value, Key, and Query in this layer are the same input matrix, which is the output of the previous layer of the encoder. Finally, the self-attention layer in the decoder allows every position in the decoder to notice all legal positions including the current position. This can be achieved by the Mask function, thereby preventing left-direction information flow to maintain autoregressive properties.</p>
+<h2 id="multi-head-attention-in-detail">Multi-head Attention in Detail</h2>
+<p>By adding a mechanism called multi-headed Attention, this paper further improves self-attention, which can improve the performance of Attention in two ways: </p>
+<ol>
+<li>Multi-headed expands the model&#x2019;s ability to focus on different positions in the sentence. In the above example, $z_1$ contains very little information about other words, and is only determined by the actual word. In other cases, such as the translation of &quot;The animal didn&#x2019;t cross the street because it was too tired&quot;, we want to know what the word &quot;it&quot; refers to.</li>
+<li>Multi-headed gives the attention layer multiple representation subspaces. As shown in the following example, there are multiple sets of Query/Key/Value-matrix under the multi-headed attention layer, not just one set (8-heads are used in the paper, each head has a set of Q/K/V matrix). Each group is randomly initialized, and after training, the input vector can be mapped into different sub-expression spaces.</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231351-823354.png" alt="image-20200226231351517"></p>
+<p>If we perform the same self-attention calculation above, there are eight different sets of weight matrices (Q/K/V), and finally we will get eight different Z matrices.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231412-54883.png" alt="image-20200226231411585"></p>
+<p>This is a bit of a hassle, because forward networks cann&apos;t accept eight matrices at a time, but want the input to be one matrix, so there&apos;s a way to deal with combining eight matrices into one matrix.</p>
+<p>What shall we do? We merge the matrix, and then multiply the combined matrix by another weight matrix $W_o$</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231426-438565.png" alt="image-20200226231426268"></p>
+<p>The above is the content of the multi-head self-attention mechanism. I think it is only a part of the matrix. Let&apos;s try to visualize them as follows.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231440-78655.png" alt="image-20200226231440268"></p>
+<p>Now that we know about &quot;Attention Heads,&quot; let&apos;s revisit the example from the previous section to see what the different &quot;Attention Heads&quot; focus on when encoding the word &quot;it&quot; in the example sentence</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231454-575423.png" alt="image-20200226231450239"></p>
+<p>When encoding &quot;it&quot;, one attention head is concentrated on &quot;the animal&quot; and the other head is concentrated on &quot;tired&quot;. In a sense, the expression of the model for &quot;IT&quot; synthesizes animal and tired.. If we put all the attention heads into the picture, it is difficult to explain intuitively</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231515-165008.png" alt="image-20200226231502275"></p>
+<h2 id="representing-the-order-of-the-sequence-using-positional-encoding">Representing The Order of The Sequence Using Positional Encoding</h2>
+<p>So far, we have not discussed how to understand the order of words in input sentences</p>
+<p>To solve the problem of word order, Transformer add a new vector for each word. These vectors follow a specific pattern for the model to learn to determine the position of the word or the distance between different words in the sequence. An intuitive understanding, after adding these vectors to the embedding vector, once they are projected into the Q/K/V vector. In dot-product attention, they can provide meaningful distance or location information between the embedding vectors.</p>
+<p>In order for the model to keep the word order, we add a positional encoding vector that follows a particular pattern.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231524-843898.png" alt="image-20200226231519980"></p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x5D4C;&#x5165;&#x7684;&#x7EF4;&#x6570;&#x4E3A;4&#xFF0C;&#x5219;&#x5B9E;&#x9645;&#x7684;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x5E94;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231538-840441.png" alt="image-20200226231538393"></p>
+<p>What does a designated pattern look like?</p>
+<p>In the figure below, each line corresponds to the position code of a vector. Therefore, the first line will be the embedded vector that we want to add to the first word in the input sequence. Each row contains 512 values. Each value is between 1 and -1. We have color-coded them to visualize the pattern. (Figure: A real example has 20 words, each with 512 dimensions. You can observe the significant separation in the middle, because the left side is generated with the sine function and the right side is generated with cosine)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231556-650814.png" alt="image-20200226231556397"></p>
+<p>There is not only one method for position coding. Note that the encoding method must be able to handle sequences of unknown length.</p>
+<p>In the original paper, researchers use sine and cosine functions of different frequencies :</p>
+<p><script type="math/tex; ">PE_{(pos,2i)} = sin(pos / 10000^{2i/d_{\text{model}}})</script><br><script type="math/tex; ">PE_{(pos,2i+1)} = cos(pos / 10000^{2i/d_{\text{model}}})</script></p>
+<p>Where <code>pos</code> is the position of the word, and <code>i</code> is the i-th element of the position encoding vector. Given the position <code>pos</code> of the word, we can map the word to a position vector of $d_{model}$ dimension, and the i-th element of the vector is calculated by the above two formulas. In other words, each dimension of the position code corresponds to a sine curve, and the wavelength constitutes a geometric sequence from $2&#x3C0;$ to $10000&#x22C5;2&#x3C0;$.</p>
+<p>The position vector of the absolute position is constructed above, but the relative position of the word is also very important. This is the subtlety of the trigonometric function used by Google researchers to represent the position. The sine and cosine functions allow the model to learn the relative position based on two transformations:</p>
+<p><script type="math/tex; ">sin(α+β)=sinα cosβ+cosα sinβ </script>
+<script type="math/tex; ">cos(α+β)=cosα cosβ−sinα sinβ </script></p>
+<p>For a fixed offset $k$ between words, the position vector $PE(pos+k)$ can be represented by the combination of $PE(pos)$ and $PE(k)$, which also represents the relative position between languages.</p>
+<h2 id="the-residuals-connection">The Residuals Connection</h2>
+<p>One detail worth noting in the encoder architecture is that in each sub-layer (FFNN), there are residual joins, and these are closely followed by <a href="https://arxiv.org/abs/1607.06450" target="_blank">layer-normalization</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231746-929475.png" alt="image-20200226231609916"></p>
+<p>If we visualize vector and layer-norm operations, it will look like this:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231730-99810.png" alt="image-20200226231730087"></p>
+<h2 id="feed-forward-network-by-position">Feed-forward network by Position</h2>
+<p>In order to pay attention to the sub-layers, each encoder and decoder module finally contains a fully connected feedforward network, which is applied independently and identically to each location. This feedforward network contains two linear transformations and a nonlinear activation function, and we can add a Dropout method between the two layers of the network during the training process:</p>
+<p><script type="math/tex; ">FFN(x) = \max(0, xW_1 + b_1 )W_2 + b_2</script></p>
+<p>If we combine these two fully connected networks with residual connection and layer normalization, then it is the last necessary sub-layer for each encoder and decoder module. We can express this sub-layer as : </p>
+<p><script type="math/tex; ">LayerNorm(x + max(0,xW_1+b_1)W_2+b_2)</script></p>
+<p>Although the linear transformation is the same in all different positions, it uses different parameters in different layers. This transformation can actually be described as two convolutions with a kernel size of 1.</p>
+<h2 id="batch-norm-vs-layer-norm">Batch Norm v.s. Layer Norm</h2>
+<ul>
+<li><p>Batch Norm : same dimension at different channels<br>Batch normalization is to consider the input data of a neuron in mini-batch, calculate the average value and variance, and then use this data to normalize the input of each training sample.</p>
+</li>
+<li><p>Layer Norm : different dimension at same channels of a layer<br>The input data of the same layer are considered, and the mean value and variance are calculated to normalize the input data of each layer.<br>The formula for calculating the layer normalized statistics for all hidden cells in the same layer is shown below :
+<script type="math/tex; ">h^t = f\lbrack \frac{g}{\sigma^t} \odot (a^t -\mu^t) + b\rbrack</script>
+<script type="math/tex; ">\mu^t = \dfrac{1}{H}\sum_{i=1}^Ha_i^t</script>
+<script type="math/tex; ">\sigma^t = \sqrt{\dfrac{1}{H}\sum_{i=1}^H(a_i^t - \mu^t)^2}</script></p>
+<p>$h^t$ represents the output of hidden layer t, $a_i^t$ represents the i-th input of the hidden layer t, $g$ is the gain parameter that scales the normalized activation before the nonlinear activation function. $\beta$ is bias.</p>
+<p>Layer normalization can greatly reduce the covariance deviation problem by correcting the mean and variance of the activation values in each layer.</p>
+</li>
+</ul>
+<p>Batch Norm is applied on batch and normalizes on NHW, which is more often used on CV task. As different channels have different important features, different channels perfom different normalization. Same batches in the same channel do the same normalization. However, Layer Norm is applied on channal and normalizes on CHW, which more frequently used on NLP task. It can be regarding as sequence length. So layer norm normalizes on the words among in a sequence of sentence, while batch norm normalized on same locatoin amone a channel. More importantly, the length of sequence can vary and channel can&apos;t be consistent, so Layer norm can apply it to sentence by sentence.</p>
+<p>The sub-layer of the decoder is similar to this structure. Assume that our model is a Transformer composed of 2 stacked encoders and decoders, as shown in the following figure:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200226231730-99810.png" alt="image-20200226231730087"></p>
+<h2 id="the-decoder-side">The Decoder Side</h2>
+<p>Now that we have understood most of the concepts on the encoder side, we also have a basic understanding of how the decoder works. Let&apos;s see how they work together.</p>
+<p>The encoder starts from the processing of the input sequence, and the output of the last encoder is converted into a set of attention vectors K and V, which are used by the &quot;encoder-decoder atttention&quot; layer of each decoder to help the decoder focus on the appropriate position of the input sequence</p>
+<p>After encoding, it is the decoding process; each step of decoding outputs an element as the output sequence.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200227122050-255783.gif" alt="1"></p>
+<p>The following steps are repeated until a special symbol appears to indicate that the decoder has completed the translation output. The output of each step is fed to the bottom decoder in the next time step, and the decoder outputs the corresponding decoding result at each step like the encoder. In addition, just as the input of the encoder does, a position vector is added to the input of the decoder to indicate the position of each word.</p>
+<p>The self-attention layer in the decoder is slightly different from the self-attention layer in the encoder:</p>
+<p>In the decoder, before performing softmax operation, unknown output is achieved by occluding future positions (setting them to -inf). The self-attention layer only allows paying attention to the position earlier than the current output.
+The &quot;Encoder-Decoder Attention&quot; layer works in the same way as multi-headed self-attention, except that it gets the output from the front layer and is converted into a Query matrix. And it receives the key and value matrix of the last layer encoder as the key and value matrix of current decoder.</p>
+<h2 id="the-final-linear-and-softmax-layer">The Final Linear and Softmax Layer</h2>
+<p>The decoder finally outputs a floating-point vector, how to convert it into words? This is the main work of the final linear layer and softmax layer.</p>
+<p>The linear layer is a simple full connection layer that maps the final output of the decoder to a very large logits vector</p>
+<p>Assuming that the model knows 10,000 words (output word list) learned from the training set, the logits vector has 10,000 dimensions, each value representing the possible tendency value of a certain word. The softmax layer converts these scores into probability values (all positive, and the sum is 1), and the word on the dimension corresponding to the highest value is the output word of this step.</p>
+<hr>
+<p>Compared with the scores in the range of $(-\infty,+\infty)$, the probability is naturally better interpretable, so that subsequent threshold operations can be completed smoothly (dimensionality is not involved after normalization).</p>
+<p>Through the full connection layer, we get the score within the range of K categories $(-\infty,+\infty)$ logits, which is called $Z_j$. In order to get the probability of each category, we first map the score to $(0,+\infty)$ through $e^{Z_j}$, and then normalize it to (0,1). Softmax thought is to rely on the calculation dependency of the loss function</p>
+<p><script type="math/tex; ">\hat{y}_j = \operatorname{softmax} \left(z_j \right) = \frac{e^{z_j}}{\sum_{k} e^{z_j}}</script></p>
+<hr>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200227114656-299496.png" alt="2"></p>
+<p>The figure starts at the bottom and uses the resulting vector as the output of the decoder part, and then converts it to an output word</p>
+<h2 id="recap-of-training">Recap Of Training</h2>
+<p>Now that we have understood the forward process of a fully trained Transformer, during training, the model will undergo the forward process described above. When we train on the labeled training set, we can compare the predicted output with the actual output.</p>
+<p>For visualization purposes, assume that the output has a total of six words (a, am, I, thanks, student, <eso>)</eso></p>
+<p>The output vocabulary of our model is created during the preprocessing stage, even before training has started.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200227114514-361222.png" alt="2"></p>
+<p>Once the word list is defined, we can construct a vector of the same dimension to represent each word, such as one-hot encoding. The following example encodes &quot;am&quot;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200227114717-192245.png" alt="4"></p>
+<p>We discuss the loss of the model, the indicators used to optimize in the training process, and guide the learning to get a very accurate model.</p>
+<h2 id="the-loss-function">The Loss Function</h2>
+<p>Let&apos;s demonstrate the training with a simple example, such as translating &quot;merci&quot; to &quot;thanks&quot;. That means that the probability distribution of the output points to the word &quot;thanks&quot;, but since the model is not trained and initialized randomly, it is unlikely to be the expected output.</p>
+<p>This means that we want the output to be a probability distribution representing the word &quot;thanks&quot;. However, since the model has not been trained, it is unlikely to happen at present.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200227114616-436191.png" alt=""></p>
+<p>Since the model parameters are initialized randomly, the untrained model outputs random values. We can compare with the real output, and then use error backward to adjust the model weights so that the output is closer to the real output.</p>
+<p>How to compare two probability distributions? Simplely adopt cross-entopy or <a href="https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained" target="_blank">Kullback-Leibler divergence</a>. Since this is an extremely simple example, the more real situation is to use a sentence as input. For example, the input is &quot;je suis &#xE9;tudiant&quot; and the expected output is &quot;i am a student&quot;. In this example, we expect the model to output a continuous probability distribution that meets the following conditions:</p>
+<ul>
+<li>Each probability distribution has the same dimensions as the vocabulary. (The dimension in the current example is 6, but in practice it is generally 3000 or 10000)</li>
+<li>The first probability distribution has the highest predicted probability value for &quot;i&quot;</li>
+<li>The second probability distribution has the highest predicted probability value for &quot;am&quot;</li>
+<li>Until the fifth output points to the &quot;end of sentence&quot; tag, the symbol also has cells related to the 10,000 element vocabulary</li>
+</ul>
+<p>We will train a sample sentence for the target probability distribution in the training example.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200227115003-813369.png" alt="6"></p>
+<p>After training the model on a large enough data set for enough time, we hope to generate the probability distribution as follows:</p>
+<p>After training, the output of the model is the translation we expect. Of course, this does not mean that the process is coming from the training set. Note that every location has a value, even if it has little to do with the output</p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenhaishun/test_pic@master/typora20200227115011-349509.png" alt="7"></p>
+<p>Now, because the model only produces one set of output per step, it is assumed that the model chooses the highest probability and discards the other parts. This is a method of generating prediction results called greedy decoding.</p>
+<p>Another way to do it would be to hold on to, say, the top two words (say, &#x2018;I&#x2019; and &#x2018;a&#x2019; for example), then in the next step, run the model twice: once assuming the first output position was the word &#x2018;I&#x2019;, and another time assuming the first output position was the word &#x2018;a&#x2019;, and whichever version produced less error considering both positions #1 and #2 is kept. We repeat this for positions #2 and #3&#x2026;etc. This method is called &#x201C;<em>beam search</em>&#x201D;, where in our example, beam_size was two (because we compared the results after calculating the beams for positions #1 and #2), and top_beams is also two (since we kept two words). These are both hyperparameters that you can experiment with.</p>
+<p>Another method is beam search. Each step only keeps two outputs with the highest probability. According to these two outputs, the next step is predicted, and new two outputs with high probability are retained. Repeat until the end of prediction.</p>
+<p>Beam search is only used for prediction (if greedy is used for prediction, one misstep could ruin all). Only use greedy when training, because in the training process, the output of each decoder has the corresponding correct answer as a reference, so there is no need for beam search to increase the accuracy of the output.</p>
+<h2 id="summary">Summary</h2>
+<h3 id="advantages">Advantages:</h3>
+<ol>
+<li>Although Transformer ultimately does not escape the traditional learning routine, the transformer is only a combination of full connection (or one-dimensional convolution) and Attention. However, its design is innovative enough, because it has abandoned the most fundamental RNN or CNN in NLP and achieved very good results. </li>
+<li>The key of Transformer&apos;s design to bring the greatest performance improvement is to set the distance between any two words to 1, which is very effective for solving the difficult long-term dependence problem in NLP. </li>
+<li>The parallelism of the algorithm is very good, which is in line with the current hardware (mainly GPU) environment.</li>
+</ol>
+<h3 id="disadvantages">Disadvantages:</h3>
+<ol>
+<li>Although rudely abandoning RNN and CNN is very dazzling, it also makes the model lose the ability to capture local features. The combination of RNN + CNN + Transformer may bring better results. </li>
+<li>The location information lost by Transformer is actually very important in NLP, and adding Position Embedding to the feature vector in the paper is only an expedient measure, and it does not change the inherent defects of Transformer structure.</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../network_compression/network_pruning.html" class="navigation navigation-prev " aria-label="Previous page: Network Pruning">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="variant_of_transformers.html" class="navigation navigation-next " aria-label="Next page: Variant of Transformers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Transformer","level":"1.16","depth":1,"next":{"title":"Variant of Transformers","level":"1.16.1","depth":2,"path":"transformer/variant_of_transformers.md","ref":"transformer/variant_of_transformers.md","articles":[]},"previous":{"title":"Network Pruning","level":"1.15.2","depth":2,"path":"network_compression/network_pruning.md","ref":"network_compression/network_pruning.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","katex"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"transformer/transformer.md","mtime":"2020-07-20T13:54:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-20T14:05:14.223Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

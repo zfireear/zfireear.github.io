@@ -1,0 +1,1098 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Explainable Machine Learning · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../attack_ml_models/attack_ml_models.html" />
+    
+    
+    <link rel="prev" href="../word_embedding/word_embedding.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../markdown_math_syntax.html">
+            
+                <a href="../markdown_math_syntax.html">
+            
+                    
+                    Markdown Math Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../gradient_descent/gradient_descent.html">
+            
+                <a href="../gradient_descent/gradient_descent.html">
+            
+                    
+                    Gradient Descent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../gradient_descent/more_about_gradient_descent.html">
+            
+                <a href="../gradient_descent/more_about_gradient_descent.html">
+            
+                    
+                    More about Gradient Descent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../gradient_descent/new_optimization.html">
+            
+                <a href="../gradient_descent/new_optimization.html">
+            
+                    
+                    New Optimazation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../classification/classification.html">
+            
+                <a href="../classification/classification.html">
+            
+                    
+                    Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../logistic_regression/logistic_regression.html">
+            
+                <a href="../logistic_regression/logistic_regression.html">
+            
+                    
+                    Logistic Regression
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../logistic_regression/lrcode.html">
+            
+                <a href="../logistic_regression/lrcode.html">
+            
+                    
+                    LRCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../deep_learning/deep_learning.html">
+            
+                <a href="../deep_learning/deep_learning.html">
+            
+                    
+                    Deep Learing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../deep_learning/tips_for_deep_learning.html">
+            
+                <a href="../deep_learning/tips_for_deep_learning.html">
+            
+                    
+                    Tips for Deep Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../pytorch/pytorch.html">
+            
+                <a href="../pytorch/pytorch.html">
+            
+                    
+                    Pytorch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../pytorch/main_mdel_introduction.html">
+            
+                <a href="../pytorch/main_mdel_introduction.html">
+            
+                    
+                    Main Model Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../pytorch/three_kinds_of_data.html">
+            
+                <a href="../pytorch/three_kinds_of_data.html">
+            
+                    
+                    three kinds of data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../pytorch/real_data_representaion.html">
+            
+                <a href="../pytorch/real_data_representaion.html">
+            
+                    
+                    real world data representation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../pytorch/walking_through_a_learning_algorithm_from_scratch.html">
+            
+                <a href="../pytorch/walking_through_a_learning_algorithm_from_scratch.html">
+            
+                    
+                    The mechanics of learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../pytorch/autograd.html">
+            
+                <a href="../pytorch/autograd.html">
+            
+                    
+                    Backpropagate all things
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../pytorch/training_validation_overfitting.html">
+            
+                <a href="../pytorch/training_validation_overfitting.html">
+            
+                    
+                    Training, validation, and overfitting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../pytorch/neural_network.html">
+            
+                <a href="../pytorch/neural_network.html">
+            
+                    
+                    Neural Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../pytorch/nn_module.html">
+            
+                <a href="../pytorch/nn_module.html">
+            
+                    
+                    NN Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../pytorch/subclassing_nn_module.html">
+            
+                <a href="../pytorch/subclassing_nn_module.html">
+            
+                    
+                    Subclassing NN Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../pytorch/pre-trained_network.html">
+            
+                <a href="../pytorch/pre-trained_network.html">
+            
+                    
+                    Pre-trained Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../pytorch/image_classification.html">
+            
+                <a href="../pytorch/image_classification.html">
+            
+                    
+                    Image Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../pytorch/problem_set_of_pytorch.html">
+            
+                <a href="../pytorch/problem_set_of_pytorch.html">
+            
+                    
+                    Problem Set of PyTorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../convolutional_neural_network/cnn.html">
+            
+                <a href="../convolutional_neural_network/cnn.html">
+            
+                    
+                    Convolutional Neural network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../convolutional_neural_network/cnn_network_structure.html">
+            
+                <a href="../convolutional_neural_network/cnn_network_structure.html">
+            
+                    
+                    CNN Network Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../convolutional_neural_network/common_cnn.html">
+            
+                <a href="../convolutional_neural_network/common_cnn.html">
+            
+                    
+                    Common CNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../convolutional_neural_network/cnn_aplication.html">
+            
+                <a href="../convolutional_neural_network/cnn_aplication.html">
+            
+                    
+                    CNN Aplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../graph_neural_network/graph_neural_network.html">
+            
+                <a href="../graph_neural_network/graph_neural_network.html">
+            
+                    
+                    Graph Neural Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../graph_neural_network/introduce_to_graph_neural_network.html">
+            
+                <a href="../graph_neural_network/introduce_to_graph_neural_network.html">
+            
+                    
+                    Introduce to Graph Neural Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../graph_neural_network/Spatial_based_gnn.html">
+            
+                <a href="../graph_neural_network/Spatial_based_gnn.html">
+            
+                    
+                    Spatial-based GNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../graph_neural_network/Spectral_based_gnn.html">
+            
+                <a href="../graph_neural_network/Spectral_based_gnn.html">
+            
+                    
+                    Spectral_based_gnn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../recurrent_neural_network/recurrent_neural_network.html">
+            
+                <a href="../recurrent_neural_network/recurrent_neural_network.html">
+            
+                    
+                    Recurrent Neural Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../recurrent_neural_network/recursive_structure.html">
+            
+                <a href="../recurrent_neural_network/recursive_structure.html">
+            
+                    
+                    Recursive Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../semi_supervised/semi_supervised.html">
+            
+                <a href="../semi_supervised/semi_supervised.html">
+            
+                    
+                    Semi-supervised
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../word_embedding/word_embedding.html">
+            
+                <a href="../word_embedding/word_embedding.html">
+            
+                    
+                    Word Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="explainable_machine_learning.html">
+            
+                <a href="explainable_machine_learning.html">
+            
+                    
+                    Explainable Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../attack_ml_models/attack_ml_models.html">
+            
+                <a href="../attack_ml_models/attack_ml_models.html">
+            
+                    
+                    Attack ML Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../attack_ml_models/attack_image_and_audio.html">
+            
+                <a href="../attack_ml_models/attack_image_and_audio.html">
+            
+                    
+                    Attack image and audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../network_compression/network_compression.html">
+            
+                <a href="../network_compression/network_compression.html">
+            
+                    
+                    Network Compression
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../network_compression/knowledge_distillation.html">
+            
+                <a href="../network_compression/knowledge_distillation.html">
+            
+                    
+                    Knowledge Distillation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../network_compression/network_pruning.html">
+            
+                <a href="../network_compression/network_pruning.html">
+            
+                    
+                    Network Pruning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../transformer/transformer.html">
+            
+                <a href="../transformer/transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../transformer/variant_of_transformers.html">
+            
+                <a href="../transformer/variant_of_transformers.html">
+            
+                    
+                    Variant of Transformers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../conditional_generation_by_RNN_&_Attention/conditional_generation_by_RNN_&_Attention.html">
+            
+                <a href="../conditional_generation_by_RNN_&_Attention/conditional_generation_by_RNN_&_Attention.html">
+            
+                    
+                    Conditional Generation by RNN & Attention
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../unsupervised_learning/unsupervised_learning.html">
+            
+                <a href="../unsupervised_learning/unsupervised_learning.html">
+            
+                    
+                    Unsupervised Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../unsupervised_learning/dimension_reduction.html">
+            
+                <a href="../unsupervised_learning/dimension_reduction.html">
+            
+                    
+                    Dimension Reduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../unsupervised_learning/neighbor_embedding.html">
+            
+                <a href="../unsupervised_learning/neighbor_embedding.html">
+            
+                    
+                    Neighbor Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../unsupervised_learning/deep_auto_encoder.html">
+            
+                <a href="../unsupervised_learning/deep_auto_encoder.html">
+            
+                    
+                    Deep Auto-encoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../bert_and_its_family/bert_and_its_family.html">
+            
+                <a href="../bert_and_its_family/bert_and_its_family.html">
+            
+                    
+                    Bert and its Family
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../bert_and_its_family/bert.html">
+            
+                <a href="../bert_and_its_family/bert.html">
+            
+                    
+                    Bert
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../nlp/natural_language_processing.html">
+            
+                <a href="../nlp/natural_language_processing.html">
+            
+                    
+                    Natual Language Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../nlp/introduction.html">
+            
+                <a href="../nlp/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../anomaly_detection/anomaly_detection.html">
+            
+                <a href="../anomaly_detection/anomaly_detection.html">
+            
+                    
+                    Anomaly Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Explainable Machine Learning</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="explainable-machine-learning">Explainable Machine Learning</h1>
+<h2 id="explainableinterpretable-ml">Explainable/Interpretable ML</h2>
+<p><strong>Local Explanation</strong> : Explain the Decision<br>such as why do you think this image is a cat?<br><strong>Global Explanation</strong> : Explain the whole model<br>such as what do you think a cat looks like?</p>
+<h2 id="why-we-need-explainable-ml">Why we need Explainable ML</h2>
+<p>We can improve ML model based on explanation.</p>
+<p><strong>NOTE</strong>  It is also possible to attack interpretation. </p>
+<h2 id="explainable-ml">Explainable ML</h2>
+<p><strong>Basic Idea</strong> : <strong>Object x</strong> $\rightarrow$ <strong>Components</strong> : {$x_1,\cdots,x_n,\cdots,x_N$}<br>Components can be image(pixel,segment,etc) or text(a word)  </p>
+<p>We want to know the importance of each components for making the decision.<br><strong>Idea</strong> : Removing or modifying the values of the components, observing the change of decision.<br>Large decision change $\rightarrow$ Importance component</p>
+<p><strong>Method</strong>:</p>
+<ul>
+<li>Gray box cover</li>
+<li>Saliency Map
+<script type="math/tex; ">\lbrace x_1,\cdots,x_n,\cdots,x_N \rbrace \rightarrow \lbrace x_1,\cdots,x_n + \Delta x,\cdots,x_N \rbrace</script>
+<script type="math/tex; ">y_k \rightarrow y_k + \Delta y</script>
+$y_k$ : the prob of the predicted class of the model<br>We observe $|\dfrac{\Delta y}{\Delta x}| \rightarrow |\dfrac{\partial y_k}{\partial x_n}|$. The lighter spot is, The more important component is.</li>
+</ul>
+<p><strong>NOTE  Limitation of Gradient Based Approaches</strong><br>When we use gradient to evaluate the importance of features, it may encounter gradient <strong>saturation</strong>, which the gradient becomes zero but actually it plays an important role on recognition. Such as according to the length of nose, the gradient of length of nose to elephant approachs zero with the length of nose increasing continuously.<br>To deal with this problem:</p>
+<ul>
+<li>Integrated gradient
+<script type="math/tex; ">(x_i - \overline{x}_i) \times\int_{\alpha=0}^1\dfrac{\partial S_c(\widetilde{x})}{\partial(\widetilde{x}_i)}\,\mathrm{d}x \Bigg|_{\widetilde{x}=\widetilde{x}+\alpha(x-\overline{x})}</script></li>
+<li>DeepLIFT<ol>
+<li>Set a baseline</li>
+<li>Reduce with baseline</li>
+</ol>
+</li>
+<li>Global attribution<br>Spirit : attribution sum up to output  <ul>
+<li>Layer-wise relevance propagation(LRP)<ol>
+<li>Locate immediate parent nodes</li>
+<li>Calculate contributions<br>Contribution = activation &#xD7;&#x3000;weight</li>
+<li>Redistribute the output</li>
+<li>Backward propagation until reachcing input</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p>Another case is that when origin image is added some noise, the gradients will be influence greatly while the image remains the same. To solve the problems of noisy gradient:</p>
+<ul>
+<li>SmoothGrad<ul>
+<li>Add noise for calculate gradient</li>
+<li>Add noise during training
+<script type="math/tex; ">\hat{M}_c(x) = \frac{1}{b}\sum_1^nM_c(x+\mathcal{N}(0,\sigma^2))</script>
+$\mathcal{N}(0,\sigma^2)$ : Gaussian noise<br>$M_c$ : gradient of saliency map</li>
+</ul>
+</li>
+</ul>
+<h2 id="global-explaination">Global Explaination</h2>
+<h3 id="actvation-maximization">Actvation Maximization</h3>
+<p>Find a image to maximize a certain output of some filters or neurons. We take out the output of a certain neuron of output layer. We assume it is $y_i$.<br>Find the image that maximizes ith-class probability
+<script type="math/tex; ">x^* = \arg \underset{x}{\max} y_i</script>
+We hope that input $x$ can  maximize the $y_i$, and $x^*$ is the maximum of the output(value) of $y_i$</p>
+<p>Deep Neural Networks are easily fooled.</p>
+<p>Taking handwritten digit recognition, we hope that the image also looks like a digit.
+<script type="math/tex; ">x^* = \arg \underset{x}{\max} y_i + R(x)</script>
+$R(x)$ : How likely $x$ is a digit
+<script type="math/tex; ">R(x) = -\sum_{i,j}|x_{i,j}|</script>
+The pixel only occurs on the digit region</p>
+<h3 id="constraint-from-generator">Constraint from Generator</h3>
+<ul>
+<li><p>Training a generator<br>low-dim vector $z\rightarrow$ Image Generator (by GAN,VAE,etc.) $\rightarrow$ Image x ($x=G(z)$)
+<script type="math/tex; ">x^* = \arg\underset{x}{\max}y_i \rightarrow z^* = \arg\underset{z}{\max}y_i</script>
+show image: $x^<em> = G(z^</em>)$  </p>
+<p>$z \rightarrow$ Image Generator $\rightarrow$ Image x $\rightarrow$ Image Classifier $\rightarrow y$</p>
+<p>We look forward to finding a best $z$ to produces image from image generator and the image classified by image classifier leads to maximizing probability of a certain class.</p>
+</li>
+</ul>
+<h2 id="using-a-model-to-explain-another">Using a Model to Explain Another</h2>
+<ul>
+<li><p>Using an interpretable model to mimic the behavior of an uninterpretable model.<br>$x^1,x^2,\cdots,x^N \rightarrow$ Black Box    $\rightarrow y^1,y^2,\cdots,y^N$<br>We use an interpretable model such as linear model to try to explain.</p>
+<ul>
+<li><p>Linear model<br>$x^1,x^2,\cdots,x^N \rightarrow$ Linear Model $\rightarrow \hat{y}^1,\hat{y}^2,\cdots,\hat{y}^N$<br>Problem:Linear model cannnot mimic neural network.<br>However,it can mimic a local region.</p>
+</li>
+<li><p>Decision Tree<br>$x^1,x^2,\cdots,x^N \rightarrow$ Decision Tree($T<em>{\theta}$) $\rightarrow \hat{y}^1,\hat{y}^2,\cdots,\hat{y}^N$<br>Problem: We don&apos;t want the tree to be too large. We want small $O(T</em>{\theta})$</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>The goal is to simulate $y$ by $\hat{y}$ as close as possible.</p>
+<h3 id="local-interpretable-model-agnostic-explanationslime">Local Interpretable Model-Agnostic Explanations(LIME)</h3>
+<ol>
+<li>Given a data point you want to explain.</li>
+<li>Sample at the nearby</li>
+<li>Fit with linear model(or other interpretable models)</li>
+<li>Interpret the linear model.</li>
+</ol>
+<p><strong>LIME Example--Image Explained by Linear model</strong></p>
+<ul>
+<li>step 1</li>
+<li>step 2<br>Each image is represented as a set of superpixels(segments)<br>Randomly delete some segements $\rightarrow$ Black Box $\rightarrow$ Compute the probability of result by black box  </li>
+<li>step 3<br>Segements $\rightarrow$ Extract $\rightarrow (x_1,\cdots,x_m,\cdots,x_M) \rightarrow$ Linear $\rightarrow$ Compute the probability<br><script type="math/tex; ">x_m =   
+  \begin{cases}
+  0, & Segment\quad m\quad is\quad deleted \\
+  1, & Segment\quad m\quad exists
+  \end{cases}</script><br>M is the number of segments<br>The key of this step is to <strong>extract</strong> features of segments </li>
+<li>step 4<br>train the model<br>$y = w_1x_1 + \cdots + w_mx_m + \cdots + w_Mx_M +b$<br>We can know the importance of each segment depending on its weight.<br>That&apos;s to say, if $w_m \approx 0 \rightarrow$ segment m is not related to target 
+Otherwise, if $w_m$ is positive $\rightarrow$ segement m indicates the image is target<br>If $w_m$ is negative $w_m$ is negative $\rightarrow$ segment m indicates the image is not target </li>
+</ul>
+<p><strong>LIME Example--Image Explained by Decision Tree</strong></p>
+<ul>
+<li>step 3<br>Train a network that is easy to be interpreted by decision tree.<br><script type="math/tex; ">\theta^* = \arg\underset{\theta}{\min}L(\theta) + \lambda O(T_{\theta})</script>
+$T<em>{\theta}$ : tree mimicking network with parameters $\theta$ (inference from network parameters)<br>$O(T</em>{\theta})$ : how complex $T_{\theta}$ is (tree regularization).</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../word_embedding/word_embedding.html" class="navigation navigation-prev " aria-label="Previous page: Word Embedding">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../attack_ml_models/attack_ml_models.html" class="navigation navigation-next " aria-label="Next page: Attack ML Models">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Explainable Machine Learning","level":"1.13","depth":1,"next":{"title":"Attack ML Models","level":"1.14","depth":1,"path":"attack_ml_models/attack_ml_models.md","ref":"attack_ml_models/attack_ml_models.md","articles":[{"title":"Attack image and audio","level":"1.14.1","depth":2,"path":"attack_ml_models/attack_image_and_audio.md","ref":"attack_ml_models/attack_image_and_audio.md","articles":[]}]},"previous":{"title":"Word Embedding","level":"1.12","depth":1,"path":"word_embedding/word_embedding.md","ref":"word_embedding/word_embedding.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","katex"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"explainable_machine_learning/explainable_machine_learning.md","mtime":"2020-07-20T13:54:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-20T14:05:14.223Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

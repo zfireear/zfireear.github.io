@@ -1,0 +1,1099 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Conditional Generation by RNN & Attention · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../unsupervised_learning/unsupervised_learning.html" />
+    
+    
+    <link rel="prev" href="../transformer/variant_of_transformers.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../markdown_math_syntax.html">
+            
+                <a href="../markdown_math_syntax.html">
+            
+                    
+                    Markdown Math Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../gradient_descent/gradient_descent.html">
+            
+                <a href="../gradient_descent/gradient_descent.html">
+            
+                    
+                    Gradient Descent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../gradient_descent/more_about_gradient_descent.html">
+            
+                <a href="../gradient_descent/more_about_gradient_descent.html">
+            
+                    
+                    More about Gradient Descent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../gradient_descent/new_optimization.html">
+            
+                <a href="../gradient_descent/new_optimization.html">
+            
+                    
+                    New Optimazation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../classification/classification.html">
+            
+                <a href="../classification/classification.html">
+            
+                    
+                    Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../logistic_regression/logistic_regression.html">
+            
+                <a href="../logistic_regression/logistic_regression.html">
+            
+                    
+                    Logistic Regression
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../logistic_regression/lrcode.html">
+            
+                <a href="../logistic_regression/lrcode.html">
+            
+                    
+                    LRCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../deep_learning/deep_learning.html">
+            
+                <a href="../deep_learning/deep_learning.html">
+            
+                    
+                    Deep Learing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../deep_learning/tips_for_deep_learning.html">
+            
+                <a href="../deep_learning/tips_for_deep_learning.html">
+            
+                    
+                    Tips for Deep Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../pytorch/pytorch.html">
+            
+                <a href="../pytorch/pytorch.html">
+            
+                    
+                    Pytorch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../pytorch/main_mdel_introduction.html">
+            
+                <a href="../pytorch/main_mdel_introduction.html">
+            
+                    
+                    Main Model Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../pytorch/three_kinds_of_data.html">
+            
+                <a href="../pytorch/three_kinds_of_data.html">
+            
+                    
+                    three kinds of data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../pytorch/real_data_representaion.html">
+            
+                <a href="../pytorch/real_data_representaion.html">
+            
+                    
+                    real world data representation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../pytorch/walking_through_a_learning_algorithm_from_scratch.html">
+            
+                <a href="../pytorch/walking_through_a_learning_algorithm_from_scratch.html">
+            
+                    
+                    The mechanics of learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../pytorch/autograd.html">
+            
+                <a href="../pytorch/autograd.html">
+            
+                    
+                    Backpropagate all things
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../pytorch/training_validation_overfitting.html">
+            
+                <a href="../pytorch/training_validation_overfitting.html">
+            
+                    
+                    Training, validation, and overfitting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../pytorch/neural_network.html">
+            
+                <a href="../pytorch/neural_network.html">
+            
+                    
+                    Neural Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../pytorch/nn_module.html">
+            
+                <a href="../pytorch/nn_module.html">
+            
+                    
+                    NN Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../pytorch/subclassing_nn_module.html">
+            
+                <a href="../pytorch/subclassing_nn_module.html">
+            
+                    
+                    Subclassing NN Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../pytorch/pre-trained_network.html">
+            
+                <a href="../pytorch/pre-trained_network.html">
+            
+                    
+                    Pre-trained Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../pytorch/image_classification.html">
+            
+                <a href="../pytorch/image_classification.html">
+            
+                    
+                    Image Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../pytorch/problem_set_of_pytorch.html">
+            
+                <a href="../pytorch/problem_set_of_pytorch.html">
+            
+                    
+                    Problem Set of PyTorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../convolutional_neural_network/cnn.html">
+            
+                <a href="../convolutional_neural_network/cnn.html">
+            
+                    
+                    Convolutional Neural network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../convolutional_neural_network/cnn_network_structure.html">
+            
+                <a href="../convolutional_neural_network/cnn_network_structure.html">
+            
+                    
+                    CNN Network Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../convolutional_neural_network/common_cnn.html">
+            
+                <a href="../convolutional_neural_network/common_cnn.html">
+            
+                    
+                    Common CNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../convolutional_neural_network/cnn_aplication.html">
+            
+                <a href="../convolutional_neural_network/cnn_aplication.html">
+            
+                    
+                    CNN Aplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../graph_neural_network/graph_neural_network.html">
+            
+                <a href="../graph_neural_network/graph_neural_network.html">
+            
+                    
+                    Graph Neural Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../graph_neural_network/introduce_to_graph_neural_network.html">
+            
+                <a href="../graph_neural_network/introduce_to_graph_neural_network.html">
+            
+                    
+                    Introduce to Graph Neural Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../graph_neural_network/Spatial_based_gnn.html">
+            
+                <a href="../graph_neural_network/Spatial_based_gnn.html">
+            
+                    
+                    Spatial-based GNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../graph_neural_network/Spectral_based_gnn.html">
+            
+                <a href="../graph_neural_network/Spectral_based_gnn.html">
+            
+                    
+                    Spectral_based_gnn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../recurrent_neural_network/recurrent_neural_network.html">
+            
+                <a href="../recurrent_neural_network/recurrent_neural_network.html">
+            
+                    
+                    Recurrent Neural Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../recurrent_neural_network/recursive_structure.html">
+            
+                <a href="../recurrent_neural_network/recursive_structure.html">
+            
+                    
+                    Recursive Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../semi_supervised/semi_supervised.html">
+            
+                <a href="../semi_supervised/semi_supervised.html">
+            
+                    
+                    Semi-supervised
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../word_embedding/word_embedding.html">
+            
+                <a href="../word_embedding/word_embedding.html">
+            
+                    
+                    Word Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../explainable_machine_learning/explainable_machine_learning.html">
+            
+                <a href="../explainable_machine_learning/explainable_machine_learning.html">
+            
+                    
+                    Explainable Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../attack_ml_models/attack_ml_models.html">
+            
+                <a href="../attack_ml_models/attack_ml_models.html">
+            
+                    
+                    Attack ML Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../attack_ml_models/attack_image_and_audio.html">
+            
+                <a href="../attack_ml_models/attack_image_and_audio.html">
+            
+                    
+                    Attack image and audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../network_compression/network_compression.html">
+            
+                <a href="../network_compression/network_compression.html">
+            
+                    
+                    Network Compression
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../network_compression/knowledge_distillation.html">
+            
+                <a href="../network_compression/knowledge_distillation.html">
+            
+                    
+                    Knowledge Distillation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../network_compression/network_pruning.html">
+            
+                <a href="../network_compression/network_pruning.html">
+            
+                    
+                    Network Pruning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../transformer/transformer.html">
+            
+                <a href="../transformer/transformer.html">
+            
+                    
+                    Transformer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../transformer/variant_of_transformers.html">
+            
+                <a href="../transformer/variant_of_transformers.html">
+            
+                    
+                    Variant of Transformers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="conditional_generation_by_RNN_&_Attention.html">
+            
+                <a href="conditional_generation_by_RNN_&_Attention.html">
+            
+                    
+                    Conditional Generation by RNN & Attention
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../unsupervised_learning/unsupervised_learning.html">
+            
+                <a href="../unsupervised_learning/unsupervised_learning.html">
+            
+                    
+                    Unsupervised Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../unsupervised_learning/dimension_reduction.html">
+            
+                <a href="../unsupervised_learning/dimension_reduction.html">
+            
+                    
+                    Dimension Reduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../unsupervised_learning/neighbor_embedding.html">
+            
+                <a href="../unsupervised_learning/neighbor_embedding.html">
+            
+                    
+                    Neighbor Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../unsupervised_learning/deep_auto_encoder.html">
+            
+                <a href="../unsupervised_learning/deep_auto_encoder.html">
+            
+                    
+                    Deep Auto-encoder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../bert_and_its_family/bert_and_its_family.html">
+            
+                <a href="../bert_and_its_family/bert_and_its_family.html">
+            
+                    
+                    Bert and its Family
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../bert_and_its_family/bert.html">
+            
+                <a href="../bert_and_its_family/bert.html">
+            
+                    
+                    Bert
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../nlp/natural_language_processing.html">
+            
+                <a href="../nlp/natural_language_processing.html">
+            
+                    
+                    Natual Language Processing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../nlp/introduction.html">
+            
+                <a href="../nlp/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../anomaly_detection/anomaly_detection.html">
+            
+                <a href="../anomaly_detection/anomaly_detection.html">
+            
+                    
+                    Anomaly Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Conditional Generation by RNN & Attention</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="conditional-generation-by-rnn--attention">Conditional Generation by RNN &amp; Attention</h1>
+<h2 id="generation">Generation</h2>
+<p>Generating a structured object component-by-component</p>
+<ul>
+<li>Sentences are composed of characters/words<ul>
+<li>Generating a character/word at each time by RNN</li>
+</ul>
+</li>
+<li>Images are composed of pixels <ul>
+<li>Generating a pixel at each time by RNN </li>
+</ul>
+</li>
+</ul>
+<h2 id="conditional-generation">Conditional Generation</h2>
+<ul>
+<li>We don&apos;t want to simply generate some random sentences.</li>
+<li>Generate sentences based on conditions.</li>
+<li>Represent the input condition as a vector, and consider the vector as the input of RNN generator.</li>
+<li>Sequence-to-sequence learning<ul>
+<li>Encoder : represent the input condition</li>
+<li>Decoder : generate the conditional output</li>
+<li>Jointly train</li>
+</ul>
+</li>
+</ul>
+<p>Problem : how to consider longer context during chatting</p>
+<h2 id="attention---dynamic-conditional-generation">Attention - Dynamic Conditional Generation</h2>
+<h3 id="why-need-dynamic-conditional-generation">Why need dynamic conditional generation?</h3>
+<ul>
+<li>Sometimes our input features are complex and hard to be encoded into a vector</li>
+<li>Let every single decode considers essential encoded information which is required at different single time </li>
+<li>Focus on local dependent input feature </li>
+</ul>
+<h2 id="machine-translation">Machine Translation</h2>
+<h3 id="attention-based-model">Attention-based model</h3>
+<p>Base Idea : </p>
+<ol>
+<li>Introduce a <strong>match</strong> function to match output $h^n$ of hidden layer of input features through RNN with another vector $z^m$(initial by a NN or simply a vector) to produce an according output $\alpha_m^n$, and then let them through a softmax layer.</li>
+<li><p>At last, we combine all the output $\hat{\alpha}_n^i$ of softmax layer 
+<script type="math/tex; ">c^k = \sum \hat{\alpha}_k^nh^n</script>
+which is our decoder input </p>
+<p> |input feature|RNN|hidden output|match vector|match function||softmax layer||matrix multiplication||add up|decoder input|
+ |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+ |&#x673A;|$\rightarrow$|$h^1$|$z^0$|$\rightarrow$|$\alpha_0^1$|$\rightarrow$|$\hat{\alpha}_0^1$|$\rightarrow$|$\hat{\alpha}_0^1h^1$|$\rightarrow$|$c^0$|
+ |&#x5668;|$\rightarrow$|$h^2$|$z^0$|$\rightarrow$|$\alpha_0^2$|$\rightarrow$|$\hat{\alpha}_0^2$|$\rightarrow$|$\hat{\alpha}_0^2h^3$|$\rightarrow$||
+ |&#x5B66;|$\rightarrow$|$h^3$|$z^0$|$\rightarrow$|$\alpha_0^3$|$\rightarrow$|$\hat{\alpha}_0^3$|$\rightarrow$|$\hat{\alpha}_0^3h^3$|$\rightarrow$||
+ |&#x4E60;|$\rightarrow$|$h^4$|$z^0$|$\rightarrow$|$\alpha_0^4$|$\rightarrow$|$\hat{\alpha}_0^4$|$\rightarrow$|$\hat{\alpha}_0^4h^4$|$\rightarrow$||</p>
+<p> From above, we could attain effective information block which remains its origin information makes decode perfom better. Such as we have $\hat{\alpha}_1^1 = 0.5, \hat{\alpha}_1^2 = 0.5, \hat{\alpha}_1^3 = 0.0, \hat{\alpha}_1^4 = 0.0$. We have then $c^0 = 0.5h^1+0.5h^2$, saying &apos;&#x673A;&#x5668;&apos; as an information block. This will produce a better encoded information.</p>
+</li>
+<li>Use $c^0$ feed into RNN to produce $z^1$ and then decode first translation with them. The same process individuals decodes with subsequent $c^1,\cdots$ repeat.</li>
+</ol>
+<h3 id="what-is-macth-function">What is macth function?</h3>
+<p>It designs by yourself, you can try the following:</p>
+<ul>
+<li>Consine similarity of $z$ and $h$</li>
+<li>Small NN whose input is $z$ and $h$, output a scala. It is worth noting that its parameters are jointly learned with other part of NN training.</li>
+<li>$\alpha = h^TWz$</li>
+</ul>
+<h2 id="memory-network">Memory Network</h2>
+<h3 id="reading-comprehension">Reading Comprehension</h3>
+<ul>
+<li>Document is composed of many sentences. Assume we have $N$ sentences $x^1,x^2,\cdots,x^N$ learned by some sentence to vector methods.  </li>
+<li>Query $q$ is question-represented vector.  </li>
+<li>Calculate <strong>match</strong> score between $q$ and each single sentence $x^N$ to produce $\alpha_N$<br>$q,x^1 \overset{Match}{\longrightarrow} \alpha_1$</li>
+<li>Weighted sum all sentences with respective $\alpha$ for extracting information, it can match and select related sentences from document for query while unrelated information will be excluded as its weight equals to zero. 
+<script type="math/tex; ">Extracted\quad Information = \sum_{n=1}^N\alpha_nx^n</script></li>
+<li>At last, feed extracted information and query into DNN to output answer.</li>
+</ul>
+<p><strong>TIPS</strong> Sentence to vector can be jointly trained with the other part of NN.</p>
+<h3 id="another-version">Another version</h3>
+<p>Extracted informations don&apos;t need to equal to match score, which has better performence. Represent same sentences with two kinds of different vectors ($x$ and $h$ vector) which can jointly learn. One to calculate match score and the another to perform weighted sum with $\alpha$. In addition, extracted information can add up to query vector to update. The afore mentioned process can repeat multiple times. At last, feed the extracted information into DNN to produce output.</p>
+<h2 id="neural-turing-machine">Neural Turing Machine</h2>
+<p>Neural Turing Machine can not only read information from memory but also modify the memory through attention.  </p>
+<ul>
+<li>Given a set of memory $m_0^1,m_0^2,m_0^3$, a vector sequence.</li>
+<li>Given a sef of Attention weight $\hat{\alpha}_0^1,\hat{\alpha}_0^2,\hat{\alpha}_0^3,\hat{\alpha}_0^4$</li>
+<li>Weighted sum to extract information
+<script type="math/tex; ">r^0 = \sum \hat{\alpha}_0^im_0^i</script></li>
+<li><p>Feed $r_0$ and first input $x^1$ into <strong>controller</strong> function and then it will output three vectors $k^1,e^1,a^1$ which can controll memory and attention.</p>
+<ul>
+<li><p>$k^1$ : the function of this vector is to generate attention<br><script type="math/tex; ">\alpha_1^i = \cos(m_0^i,k^1)</script><br>We generate new match score $\alpha$ after previous step such as $\alpha_1^1,\alpha_1^2,\alpha_1^3,\alpha_1^4$. And then let new match score through a softmax layer to generate distribution of attention $\hat{\alpha}_1^1,\hat{\alpha}_1^2,\hat{\alpha}_1^3,\hat{\alpha}_1^4$.</p>
+</li>
+<li><p>$e^1$ : the function of this vector is to empty memory, often value between 0 and 1.</p>
+</li>
+<li>$a^1$ : the function of this vector is to update memory, $a^1$ is the new vector.</li>
+</ul>
+</li>
+<li>And then update memory :
+<script type="math/tex; ">m_1^i = m_0^i - \hat{\alpha}_1^ie^1\odot m_0^i + \hat{\alpha}_1^ia^1</script></li>
+</ul>
+<h2 id="tips-for-generation">Tips for Generation</h2>
+<h3 id="attention">Attention</h3>
+<p>$a_t^i$ : i for component, t for time<br>Good Attention : each input component has approximately the same attention weight. For emample, let attention cover all the frame and should not be too big.<br>e.g. Regularization term: $\sum_i(\tau - \sum_t\alpha_t^i)^2$</p>
+<ul>
+<li>i for each component</li>
+<li>t over the generation</li>
+<li>$\tau$ is the sum of all weights of attention for each frame in the process of generation</li>
+</ul>
+<h3 id="mismatch-between-train-and-test">Mismatch between Train and Test</h3>
+<p>Taking RNN for training, and generation for testing. There is exposure bias.<br>Testing : output of model is the input of the next step, which reference aren&apos;t known.<br>Training : the inputs are reference.<br>So one step wrong in training, may be totally wrong in testing as it never explore this case.<br>Soluction : Scheduled Sampling</p>
+<h2 id="beam-search">Beam Search</h2>
+<p>Basic idea : keep several best path at each step</p>
+<h2 id="pointer-network">Pointer Network</h2>
+<p>Pointer Network also apply attention mechanism, but the key difference is that in pointer network it uses <strong>argmax</strong> from distribution of attention weight as output rather than the weighted sum on attention weight. In this case, what decoder can output depends on the input.<br>Pointer Network can apply on machine translation and chat-bot because it can identify proper noun such as person&apos;s name even there are not sample in training data.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../transformer/variant_of_transformers.html" class="navigation navigation-prev " aria-label="Previous page: Variant of Transformers">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../unsupervised_learning/unsupervised_learning.html" class="navigation navigation-next " aria-label="Next page: Unsupervised Learning">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Conditional Generation by RNN & Attention","level":"1.17","depth":1,"next":{"title":"Unsupervised Learning","level":"1.18","depth":1,"path":"unsupervised_learning/unsupervised_learning.md","ref":"unsupervised_learning/unsupervised_learning.md","articles":[{"title":"Dimension Reduction","level":"1.18.1","depth":2,"path":"unsupervised_learning/dimension_reduction.md","ref":"unsupervised_learning/dimension_reduction.md","articles":[]},{"title":"Neighbor Embedding","level":"1.18.2","depth":2,"path":"unsupervised_learning/neighbor_embedding.md","ref":"unsupervised_learning/neighbor_embedding.md","articles":[]},{"title":"Deep Auto-encoder","level":"1.18.3","depth":2,"path":"unsupervised_learning/deep_auto_encoder.md","ref":"unsupervised_learning/deep_auto_encoder.md","articles":[]}]},"previous":{"title":"Variant of Transformers","level":"1.16.1","depth":2,"path":"transformer/variant_of_transformers.md","ref":"transformer/variant_of_transformers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","katex"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"conditional_generation_by_RNN_&_Attention/conditional_generation_by_RNN_&_Attention.md","mtime":"2020-07-20T13:54:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-20T14:05:14.223Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
